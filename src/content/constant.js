@@ -11,7 +11,7 @@ export const companyDetails = {
   twitter: "https://www.linkedin.com/company/the-gravity-ai-tech/",
   instagram:
     "https://www.instagram.com/the_gravity_ai_tech?igsh=Y25lcDZoa3AzaG5p&utm_source=qr",
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/company/the-gravity-ai-tech/",
 };
 
 export const testimonials = [

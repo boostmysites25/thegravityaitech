@@ -37,7 +37,7 @@ const ServiceDetails = () => {
   if (!service) return <Navigate to="/services" replace={true} />;
 
   return (
-    <div className="mt-[5.5rem] lg:mt-[9rem] min-h-screen text-white max-w-[100vw]">
+    <div className="mt-[5.5rem] lg:mt-[9rem] min-h-screen max-w-[100vw]">
       {/* Hero Section with Image */}
       <div className="relative overflow-hidden">
         {/* Image with gradient overlay */}
@@ -72,12 +72,6 @@ const ServiceDetails = () => {
               },
             }}
           />
-          {/* <img
-            src={bannerImg}
-            alt={service.title}
-            className="w-full h-full object-cover rounded-xl"
-            data-aos="fade-in"
-          /> */}
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent rounded-xl" />
 
           {/* Floating image frame effect */}
@@ -127,14 +121,14 @@ const ServiceDetails = () => {
               data-aos="fade-right"
             />
             <h2
-              className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
+              className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary"
               data-aos="fade-left"
             >
               OVERVIEW
             </h2>
           </div>
           <p
-            className="text-base md:text-lg text-gray-300 leading-relaxed max-w-4xl"
+            className="text-base md:text-lg leading-relaxed max-w-4xl"
             data-aos="fade-up"
           >
             {service.overview}
@@ -149,7 +143,7 @@ const ServiceDetails = () => {
               data-aos="fade-right"
             />
             <h2
-              className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary"
+              className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary"
               data-aos="fade-left"
             >
               KEY FEATURES
@@ -159,18 +153,18 @@ const ServiceDetails = () => {
             {service.features.map((feature, index) => (
               <motion.div
                 key={index}
-                className="bg-gray-800/50 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-gray-700 hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
+                className="bg-primary/5 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-gray-700 hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
                 whileHover={{ y: -5 }}
                 data-aos="fade-up"
                 data-aos-delay={index * 50}
               >
                 <div className="flex items-start">
                   <div className="flex-shrink-0 mt-1 mr-3 md:mr-4">
-                    <div className="h-5 w-5 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
+                    <div className="h-5 w-5 rounded-full bg-gradient-to-r from-primary to-primary flex items-center justify-center">
                       <FaCheck className="h-3 w-3 text-white" />
                     </div>
                   </div>
-                  <p className="text-sm md:text-base text-gray-300">
+                  <p className="text-sm md:text-base">
                     {feature}
                   </p>
                 </div>
@@ -197,12 +191,12 @@ const ServiceDetails = () => {
             {service.technologies.map((tech, index) => (
               <motion.div
                 key={index}
-                className="bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700 overflow-hidden hover:shadow-lg hover:shadow-primary/10 transition-all duration-300"
+                className="bg-primary/5 backdrop-blur-sm rounded-xl border border-gray-700 overflow-hidden hover:shadow-lg hover:shadow-primary/10 transition-all duration-300"
                 whileHover={{ y: -5 }}
                 data-aos="fade-up"
                 data-aos-delay={index * 50}
               >
-                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-3 md:p-4 border-b border-gray-700 flex items-center">
+                <div className="bg-gradient-to-r text-white from-gray-800 to-gray-900 p-3 md:p-4 border-b border-gray-700 flex items-center">
                   {tech.name === "Frontend" && <SiReact className="mr-2" />}
                   {tech.name === "Backend" && <FaServer className="mr-2" />}
                   {tech.name === "Databases" && <FaDatabase className="mr-2" />}
@@ -222,7 +216,7 @@ const ServiceDetails = () => {
                   {tech.items.map((item, i) => (
                     <motion.li
                       key={i}
-                      className="p-3 md:p-4 text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-200 flex items-center"
+                      className="p-3 md:p-4 text-sm md:text-base transition-colors duration-200 flex items-center"
                       whileHover={{ x: 5 }}
                     >
                       <FaChevronRight className="text-primary mr-2 text-xs" />
@@ -243,7 +237,7 @@ const ServiceDetails = () => {
               data-aos="fade-right"
             />
             <h2
-              className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
+              className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary"
               data-aos="fade-left"
             >
               OUR PROCESS
@@ -262,21 +256,21 @@ const ServiceDetails = () => {
                   data-aos-delay={index * 100}
                 >
                   {/* Timeline dot */}
-                  <div className="absolute -left-6 md:-left-8 top-1/2 transform -translate-y-1/2 h-4 w-4 md:h-5 md:w-5 rounded-full bg-gradient-to-r from-primary to-secondary shadow-lg shadow-primary/30" />
+                  <div className="absolute -left-6 md:-left-8 top-1/2 transform -translate-y-1/2 h-4 w-4 md:h-5 md:w-5 rounded-full bg-gradient-to-r from-primary to-primary shadow-lg shadow-primary/30" />
 
                   <motion.div
-                    className="bg-gray-800/50 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-gray-700 hover:border-secondary transition-all duration-300"
+                    className="bg-primary/5 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-gray-700 hover:border-secondary transition-all duration-300"
                     whileHover={{ x: 10 }}
                   >
                     <div className="flex items-center mb-2">
-                      <span className="text-base md:text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary mr-2 md:mr-3">
+                      <span className="text-base md:text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary mr-2 md:mr-3">
                         {step.step}.
                       </span>
-                      <h3 className="text-lg md:text-xl font-bold text-gray-100">
+                      <h3 className="text-lg md:text-xl font-bold">
                         {step.title}
                       </h3>
                     </div>
-                    <p className="text-sm md:text-base text-gray-400 pl-6 md:pl-8">
+                    <p className="text-sm md:text-base pl-6 md:pl-8">
                       {step.description}
                     </p>
                   </motion.div>
@@ -288,7 +282,7 @@ const ServiceDetails = () => {
 
         {/* Benefits Section */}
         <section
-          className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl md:rounded-2xl p-6 md:p-8 border border-gray-700/50 shadow-xl"
+          className="bg-gradient-to-br from-primary/5 to-primary/5 rounded-xl md:rounded-2xl p-6 md:p-8 border border-gray-700/50 shadow-xl"
           data-aos="fade-up"
         >
           <div className="flex items-center mb-6 md:mb-8">
@@ -297,7 +291,7 @@ const ServiceDetails = () => {
               data-aos="fade-right"
             />
             <h2
-              className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
+              className="text-xl md:text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary"
               data-aos="fade-left"
             >
               BENEFITS
@@ -313,11 +307,11 @@ const ServiceDetails = () => {
                 data-aos-delay={index * 50}
               >
                 <div className="flex-shrink-0 mt-1 mr-3 md:mr-4">
-                  <div className="h-5 w-5 md:h-6 md:w-6 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+                  <div className="h-5 w-5 md:h-6 md:w-6 rounded-full bg-gradient-to-r from-primary to-primary flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
                     <FaLightbulb className="h-3 w-3 md:h-4 md:w-4 text-white" />
                   </div>
                 </div>
-                <p className="text-sm md:text-base text-gray-300 group-hover:text-white transition-colors duration-300">
+                <p className="text-sm md:text-base transition-colors duration-300">
                   {benefit}
                 </p>
               </motion.div>

@@ -69,38 +69,52 @@ const ContactForm = () => {
     <section id="contact" className="py-14">
       <div className="wrapper grid md:grid-cols-[55%,1fr] gap-8 md:gap-6">
         <div className="space-y-4">
-          <SubHeading heading="Contact Us" className="text-white" />
+          <SubHeading heading="Contact Us" className="text-gray-800" />
           <h2 className="text1">Get In Touch</h2>
-          <p className="desc text-white/70">
-            We’d love to hear from you! Whether you’re curious about how AI-powered calling, chatbots, blockchain, or any of our other tech solutions can help your business, we’re here to help. <br /><br />
-            At The Gravity AI Tech, we offer a wide range of services—from cloud computing and data analytics to VR/AR development and mobile apps—all designed to solve real challenges and deliver real results. Whatever your project or question, our team is ready to listen and provide the right expertise.
-            <br /><br />
-            Reach out anytime by phone, email, or drop by our office. Or simply fill out the form below, and we’ll get back to you as soon as possible.
+          <p className="desc text-gray-700">
+            We’d love to hear from you! Whether you’re curious about how
+            AI-powered calling, chatbots, blockchain, or any of our other tech
+            solutions can help your business, we’re here to help. <br />
+            <br />
+            At The Gravity AI Tech, we offer a wide range of services—from cloud
+            computing and data analytics to VR/AR development and mobile
+            apps—all designed to solve real challenges and deliver real results.
+            Whatever your project or question, our team is ready to listen and
+            provide the right expertise.
+            <br />
+            <br />
+            Reach out anytime by phone, email, or drop by our office. Or simply
+            fill out the form below, and we’ll get back to you as soon as
+            possible.
           </p>
           <div className="flex items-center gap-3">
-            <Link to={companyDetails.facebook} className="link">
+            <Link to={companyDetails.facebook} target="_blank" className="link">
               <FaFacebook size={40} />
             </Link>
-            <Link to={companyDetails.instagram} className="link">
+            <Link
+              to={companyDetails.instagram}
+              target="_blank"
+              className="link"
+            >
               <AiFillInstagram size={40} />
             </Link>
-            <Link to={companyDetails.linkedin} className="link">
+            <Link to={companyDetails.linkedin} target="_blank" className="link">
               <FaLinkedin size={40} />
             </Link>
-            <Link to={companyDetails.twitter} className="link">
+            <Link to={companyDetails.twitter} target="_blank" className="link">
               <FaXTwitter size={40} />
             </Link>
           </div>
         </div>
         <form
           onSubmit={handleSubmit(handleFormSubmit)}
-          className="bg-[#1A1A1A] p-5 rounded-xl space-y-5"
+          className="bg-gray-100 p-5 rounded-xl space-y-5 shadow-md"
         >
           <div className="grid lg:grid-cols-2 gap-5">
             <div>
               <input
                 type="text"
-                className="bg-[#333333] p-3 rounded-md w-full outline-none"
+                className="bg-white border border-gray-300 p-3 rounded-md w-full outline-none focus:border-primary"
                 placeholder="Name"
                 {...register("name", {
                   required: "Full name is required",
@@ -118,7 +132,7 @@ const ContactForm = () => {
             <div>
               <input
                 type="email"
-                className="bg-[#333333] p-3 rounded-md w-full outline-none"
+                className="bg-white border border-gray-300 p-3 rounded-md w-full outline-none focus:border-primary"
                 placeholder="Email"
                 {...register("email", {
                   required: "Email is required",
@@ -134,7 +148,7 @@ const ContactForm = () => {
           <div>
             <input
               type="tel"
-              className="bg-[#333333] p-3 rounded-md w-full outline-none"
+              className="bg-white border border-gray-300 p-3 rounded-md w-full outline-none focus:border-primary"
               placeholder="Phone Number"
               {...register("phone", {
                 required: "Phone number is required",
@@ -149,7 +163,7 @@ const ContactForm = () => {
           <div>
             <input
               type="text"
-              className="bg-[#333333] p-3 rounded-md w-full outline-none"
+              className="bg-white border border-gray-300 p-3 rounded-md w-full outline-none focus:border-primary"
               placeholder="Subject"
               {...register("subject", {
                 required: "Subject is required",
@@ -167,7 +181,7 @@ const ContactForm = () => {
           <div>
             <textarea
               rows="5"
-              className="bg-[#333333] p-3 rounded-md w-full outline-none"
+              className="bg-white border border-gray-300 p-3 rounded-md w-full outline-none focus:border-primary"
               placeholder="How can we help?"
               {...register("message", {
                 required: "Message is required",
@@ -184,7 +198,7 @@ const ContactForm = () => {
           </div>
           <button
             disabled={isSubmitting}
-            className="w-full btn-rounded bg-primary text-white hover:bg-black border border-primary flex justify-center disabled:hover:bg-primary disabled:cursor-not-allowed"
+            className="w-full btn-rounded bg-primary text-white hover:bg-white hover:text-primary border border-primary flex justify-center disabled:hover:bg-primary disabled:cursor-not-allowed"
           >
             {isSubmitting ? (
               <PiSpinnerGapLight size={20} className="animate-spin" />

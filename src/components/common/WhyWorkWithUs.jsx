@@ -67,12 +67,11 @@ const WhyWorkWithUs = () => {
   return (
     <div className="py-14">
       <div className="wrapper flex flex-col items-center gap-3">
-        <SubHeading heading="Why Work With Us" className="text-white" />
-        <h2 className="text1 text-center max-w-4xl mx-auto">
-          Partner with us
-        </h2>
+        <SubHeading heading="Why Work With Us" className="text-gray-800" />
         <p className="desc text-center max-w-3xl mx-auto">
-          See why businesses choose us for reliable, innovative solutions—crafted to align with their unique goals and drive measurable results.
+          See why businesses choose us for reliable, innovative
+          solutions—crafted to align with their unique goals and drive
+          measurable results.
         </p>
       </div>
       <div ref={sliderRef} className="keen-slider py-10">
@@ -89,7 +88,7 @@ const WhyWorkWithUs = () => {
             />
             <div className="px-4 pb-4 pt-5 space-y-5">
               <h4 className="text3">{item.title}</h4>
-              <p className="desc text-white/70">{item.description}</p>
+              <p className="desc text-gray-700">{item.description}</p>
             </div>
           </div>
         ))}
@@ -97,13 +96,13 @@ const WhyWorkWithUs = () => {
       <div className="wrapper flex justify-end gap-5">
         <button
           onClick={prevClick}
-          className="text-white text-2xl hover:text-white/70 p-2 border border-white hover:border-white/70 transition-all duration-200 rounded-xl"
+          className="text-gray-800 text-2xl hover:text-gray-600 p-2 border border-gray-800 hover:border-gray-600 transition-all duration-200 rounded-xl"
         >
           <GoArrowLeft size={30} />
         </button>
         <button
           onClick={nextClick}
-          className="text-white text-2xl hover:text-white/70 p-2 border border-white hover:border-white/70 transition-all duration-200 rounded-xl"
+          className="text-gray-800 text-2xl hover:text-gray-600 p-2 border border-gray-800 hover:border-gray-600 transition-all duration-200 rounded-xl"
         >
           <GoArrowRight size={30} />
         </button>

@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <>
       <div className="fixed top-0 left-0 w-full z-[100]">
-        <div className="hidden md:block relative bg-white text-black">
+        <div className="hidden border-b md:block relative bg-white text-black">
           <div className="hidden md:grid grid-cols-[1fr_30%] lg:grid-cols-[1fr_25%] bg-white">
             <div className="bg-white py-6"></div>
             <div className="bg-secondary top_header_social_links py-6"></div>
@@ -52,6 +52,7 @@ const Header = () => {
             <div className="py-2 flex items-center gap-4">
               <Link
                 to={companyDetails.facebook}
+                target="_blank"
                 className="md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-300 md:hover:border-primary text-black md:text-white md:border border-black group"
               >
                 <FaFacebookF
@@ -61,6 +62,7 @@ const Header = () => {
               </Link>
               <Link
                 to={companyDetails.linkedin}
+                target="_blank"
                 className="md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-300 md:hover:border-primary text-black md:text-white md:border border-black group"
               >
                 <FaLinkedinIn
@@ -70,6 +72,7 @@ const Header = () => {
               </Link>
               <Link
                 to={companyDetails.instagram}
+                target="_blank"
                 className="md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-300 md:hover:border-primary text-black md:text-white md:border border-black group"
               >
                 <AiFillInstagram
@@ -80,6 +83,7 @@ const Header = () => {
 
               <Link
                 to={companyDetails.twitter}
+                target="_blank"
                 className="md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-300 md:hover:border-primary text-black md:text-white md:border border-black group"
               >
                 <FaXTwitter
@@ -90,7 +94,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="bg-black flex items-center py-5">
+        <div className="bg-white border-b border-gray-200 flex items-center py-3">
           <div className="wrapper w-full h-fit flex items-center justify-between gap-10">
             <Scroll
               data-aos="fade-down"
@@ -100,21 +104,26 @@ const Header = () => {
               duration={500}
               className="flex items-center gap-2 cursor-pointer"
             >
-              <img src={logo} alt="logo" className="w-[4rem] sm:w-[5rem] scale-110" />
+              <img
+                src={logo}
+                alt="logo"
+                className="w-[4rem] sm:w-[6rem] scale-110"
+              />
             </Scroll>
 
             {/* Desktop Navigation */}
             <div
               data-aos="fade-down"
-              className="hidden lg:flex items-center gap-10"
+              className="hidden xl:flex items-center gap-10"
             >
               {links.map((link) => {
                 return link.url.includes("/") ? (
                   <Link
                     key={link.id}
                     to={link.url}
-                    className={`${pathname === link.url ? "text-primary" : "text-white"
-                      } link`}
+                    className={`${
+                      pathname === link.url ? "text-primary" : "text-gray-800"
+                    } link`}
                   >
                     {link.title}
                   </Link>
@@ -126,25 +135,26 @@ const Header = () => {
                     smooth={true}
                     duration={500}
                     offset={-150}
-                    className={`${pathname === link.url ? "text-primary" : "text-white"
-                      } link`}
+                    className={`${
+                      pathname === link.url ? "text-primary" : "text-gray-800"
+                    } link`}
                   >
                     {link.title}
                   </Scroll>
                 );
               })}
             </div>
-            <div data-aos="fade-down" className="hidden lg:flex">
+            <div data-aos="fade-down" className="hidden xl:flex">
               <Link
                 to={`tel:${companyDetails.phone}`}
-                className="btn-fullrounded bg-primary text-white hover:bg-black hover:text-white border border-primary"
+                className="btn-fullrounded bg-primary text-white hover:bg-gray-100 hover:text-primary border border-primary"
               >
                 Let's Talk
               </Link>
             </div>
 
             {/* Mobile Hamburger Button */}
-            <button data-aos="fade-down" className="lg:hidden">
+            <button data-aos="fade-down" className="xl:hidden">
               <Hamburger toggled={isOpen} toggle={setIsOpen} size={28} />
             </button>
           </div>
@@ -158,7 +168,7 @@ const Header = () => {
             <div className="mb-6 flex items-center justify-end pr-[.7rem] py-[.4rem]">
               <button
                 onClick={toggleDrawer}
-                className="text-white text-[2.2rem]"
+                className="text-gray-800 text-[2.2rem]"
               >
                 <IoClose />
               </button>
@@ -168,7 +178,7 @@ const Header = () => {
                 return url.includes("/") ? (
                   <Link
                     key={id}
-                    className="text-3xl text-white font-medium transition-colors duration-300 link"
+                    className="text-3xl text-gray-800 font-medium transition-colors duration-300 link"
                     to={url}
                     onClick={toggleDrawer}
                   >
@@ -182,7 +192,7 @@ const Header = () => {
                     smooth={true}
                     duration={500}
                     offset={-150}
-                    className="text-3xl text-white font-medium transition-colors duration-300 link"
+                    className="text-3xl text-gray-800 font-medium transition-colors duration-300 link"
                     onClick={toggleDrawer}
                   >
                     {title}

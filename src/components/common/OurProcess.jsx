@@ -35,10 +35,10 @@ const OurProcess = ({ showButton }) => {
           className="grid md:grid-cols-[55%,1fr] items-center gap-6 md:gap-16"
         >
           <div className="space-y-3">
-            <SubHeading heading="Our Process" className="text-white" />
+            <SubHeading heading="Our Process" className="text-gray-800" />
             <h2 className="text1">Turning Ideas into Impactful Solutions</h2>
           </div>
-          <p className="desc text-white/70">
+          <p className="desc text-gray-700">
             Our approach blends strategy, creativity, and technology to deliver meaningful results.
             From discovery and planning to design, development, and launch, we follow a streamlined process
             that prioritizes transparency, precision, and your long-term success.
@@ -47,7 +47,7 @@ const OurProcess = ({ showButton }) => {
 
         <div
           data-aos="fade-up"
-          className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-8 sm:mt-16"
+          className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-5 my-8 sm:my-16"
         >
           {process.map((item) => (
             <div
@@ -55,7 +55,7 @@ const OurProcess = ({ showButton }) => {
               className="sm:odd:translate-y-[1rem] flex flex-col space-y-3 p-6 rounded-xl border border-primary"
             >
               <h2 className="text1 text-stroke font-sans">{item.id}</h2>
-              <h4 className="text-lg text-white/70">{item.title}</h4>
+              <h4 className="text-lg text-gray-700">{item.title}</h4>
               <p className="text3">{item.desc}</p>
             </div>
           ))}
@@ -84,7 +84,7 @@ const OurProcess = ({ showButton }) => {
           <div data-aos="fade-up" className="pt-8 sm:pt-24">
             <ArrowButton
               to="/services"
-              className="bg-black border border-primary text-white hover:bg-primary !w-fit mx-auto"
+              className="bg-white border border-primary text-primary hover:bg-primary hover:text-white !w-fit mx-auto"
             >
               Let’s Build Your Success Together
             </ArrowButton>

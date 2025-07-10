@@ -18,9 +18,6 @@ const AllServices = lazy(() => import("../components/website/AllServices"));
 const OurProcess = lazy(() => import("../components/common/OurProcess"));
 const Testimonials = lazy(() => import("../components/common/Testimonials"));
 const Faq = lazy(() => import("../components/common/Faq"));
-const SlidingComponent = lazy(() =>
-  import("../components/common/SlidingComponent")
-);
 const WhyWorkWithUs = lazy(() => import("../components/common/WhyWorkWithUs"));
 const CEOMessage = lazy(() => import("../components/common/CEOMessage"));
 
@@ -28,7 +25,7 @@ const Home = () => {
   return (
     <div className="mt-[4.5rem]">
       <section className="relative min-h-screen">
-        <div className="absolute inset-0 bg-black/60 z-[2]" />
+        <div className="absolute inset-0 bg-white/70 z-[2]" />
         <ReactPlayer
           url={bannerVid}
           playing
@@ -60,7 +57,7 @@ const Home = () => {
         />
         <div className="wrapper absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] flex flex-col-reverse gap-5 sm:grid grid-cols-[1fr,20%] items-center">
           <div data-aos="fade-up" className="max-w-[50rem] space-y-1">
-            <SubHeading heading="Growth Accelerator" className="text-white" />
+            <SubHeading heading="Growth Accelerator" className="text-gray-800" />
             <h1 className="text_xl">
               We Power Innovation Through{" "}
               <span className="text-primary">AI, Data, and Emerging Tech</span>
@@ -71,11 +68,11 @@ const Home = () => {
             <div className="pt-10 flex sm:flex-row flex-col items-center gap-2">
               <ArrowButton
                 to="/contact-us"
-                className="bg-white text-black hover:bg-transparent hover:text-white border border-white"
+                className="bg-primary text-white hover:bg-transparent hover:text-primary border border-primary"
               >
                 Get A Free Consultation
               </ArrowButton>
-              <Link className="w-full sm:min-w-[10rem] sm:w-auto text-center btn-rounded border border-white text-white bg-transparent hover:bg-white hover:text-black">
+              <Link className="w-full sm:min-w-[10rem] sm:w-auto text-center btn-rounded border border-gray-800 text-gray-800 bg-transparent hover:bg-gray-800 hover:text-white">
                 Our Services
               </Link>
             </div>
@@ -91,7 +88,7 @@ const Home = () => {
       <section className="wrapper">
         <div
           className="sm:max-w-[85vw] lg:!max-w-[60vw] w-full aspect-[2.14/1
-] mx-auto -translate-y-[5rem] lg:-translate-y-[8rem] relative z-[5] rounded-[3rem] overflow-hidden bg-black"
+] mx-auto -translate-y-[5rem] lg:-translate-y-[8rem] relative z-[5] rounded-[3rem] overflow-hidden bg-white shadow-lg"
         >
           <img
             loading="lazy"
@@ -104,7 +101,7 @@ const Home = () => {
             {/* <div className="2xl:absolute right-0 top-1/2 2xl:-translate-y-1/2 p-5 2xl:px-10 "> */}
             <p
               data-aos="fade-left"
-              className="text-lg md:text-2xl !font-normal text-white/70"
+              className="text-lg md:text-2xl !font-normal text-gray-800"
             >
               The Gravity AI Tech delivers cutting-edge solutions tailored for
               the dynamic digital era. From custom software to AI-powered
@@ -117,7 +114,7 @@ const Home = () => {
 
       <section className="pb-14 wrapper space-y-3">
         <div data-aos="fade-up" className="flex justify-center">
-          <SubHeading heading="About Us" className="text-white" />
+          <SubHeading heading="About Us" className="text-gray-800" />
         </div>
         <div className="grid md:grid-cols-[40%,1fr] gap-10">
           <div className="relative w-full rounded-[3rem] overflow-hidden">
@@ -138,7 +135,7 @@ const Home = () => {
           </div>
           <div data-aos="fade-up" className="space-y-3">
             <h2 className="text1">Technology That Moves You Forward</h2>
-            <p className="desc text-white/70">
+            <p className="desc text-gray-700">
               At The Gravity AI Tech, we craft smart digital solutions that make
               a real difference. From AI-powered calling systems and chatbots to
               immersive AR/VR and game development—we build what today’s
@@ -154,14 +151,14 @@ const Home = () => {
               technology that scales with you—and works for you.
             </p>
             <div className="grid sm:grid-cols-2 gap-3 py-6">
-              <div className="bg-[#121212] flex items-center gap-3 justify-center rounded p-3">
-                <div className="bg-black rounded-full w-14 min-w-14 h-14 flex items-center justify-center">
+              <div className="bg-gray-100 flex items-center gap-3 justify-center rounded p-3">
+                <div className="bg-white shadow-md rounded-full w-14 min-w-14 h-14 flex items-center justify-center">
                   <PiStrategyBold size={30} className="fill-secondary" />
                 </div>
                 <p className="text3">Future-Focused Strategies</p>
               </div>
-              <div className="bg-[#121212] flex items-center gap-3 justify-center rounded p-3">
-                <div className="bg-black rounded-full w-14 min-w-14 h-14 flex items-center justify-center">
+              <div className="bg-gray-100 flex items-center gap-3 justify-center rounded p-3">
+                <div className="bg-white shadow-md rounded-full w-14 min-w-14 h-14 flex items-center justify-center">
                   <MdSecurity size={30} className="fill-secondary" />
                 </div>
                 <p className="text3">Secure and Scalable Systems</p>
@@ -184,13 +181,12 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <AllServices length={3} />
+      <AllServices length={9} />
       <OurProcess showButton={true} />
       <CEOMessage />
       <IndustriesWeServe />
       <Testimonials />
       <Faq showButton={true} />
-      {/* <SlidingComponent /> */}
       <WhyWorkWithUs />
       <BrandLogos />
     </div>

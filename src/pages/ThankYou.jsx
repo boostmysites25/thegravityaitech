@@ -38,6 +38,7 @@ const ThankYou = () => {
             <div className="py-2 flex items-center gap-4">
               <Link
                 to={companyDetails.facebook}
+                target="_blank"
                 className="md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-300 md:hover:border-primary text-black md:text-white md:border border-white group"
               >
                 <FaFacebookF
@@ -47,6 +48,7 @@ const ThankYou = () => {
               </Link>
               <Link
                 to={companyDetails.linkedin}
+                target="_blank"
                 className="md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-300 md:hover:border-primary text-black md:text-white md:border border-white group"
               >
                 <FaLinkedinIn
@@ -56,6 +58,7 @@ const ThankYou = () => {
               </Link>
               <Link
                 to={companyDetails.instagram}
+                target="_blank"
                 className="md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-300 md:hover:border-primary text-black md:text-white md:border border-white group"
               >
                 <AiFillInstagram
@@ -66,6 +69,7 @@ const ThankYou = () => {
 
               <Link
                 to={companyDetails.twitter}
+                target="_blank"
                 className="md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-300 md:hover:border-primary text-black md:text-white md:border border-white group"
               >
                 <FaXTwitter
@@ -76,27 +80,37 @@ const ThankYou = () => {
             </div>
           </div>
         </div>
-        <div className="bg-black flex items-center py-5">
+        <div className="bg-white border-b border-gray-200 flex items-center py-5">
           <div className="wrapper w-full h-fit flex items-center justify-between gap-10">
             <a
               data-aos="fade-down"
               href="/"
               className="flex items-center gap-2"
             >
-              <img src={logo} alt="logo" className="w-[4rem] sm:w-[5rem] scale-110" />
+              <img
+                src={logo}
+                alt="logo"
+                className="w-[4rem] sm:w-[5rem] scale-110"
+              />
             </a>
           </div>
         </div>
       </div>
 
-      <section data-aos="fade-up" className="mt-[4.5rem] min-h-[70vh] flex items-center">
+      <section
+        data-aos="fade-up"
+        className="mt-[4.5rem] min-h-[70vh] flex items-center"
+      >
         <div className="!max-w-6xl wrapper flex flex-col items-center gap-3 translate-y-[1rem] text-center">
           <h1 className="text1">Thank You!</h1>
           <p className="text4 mb-4 !font-normal">
             Thank you for reaching out to us. We will get back to you as soon as
             possible.
           </p>
-          <Link to="/" className="btn-fullrounded bg-primary text-white min-w-[8rem] hover:bg-black border border-primary">
+          <Link
+            to="/"
+            className="btn-fullrounded bg-primary text-white min-w-[8rem] hover:bg-white hover:text-primary border border-primary"
+          >
             Go to Home
           </Link>
         </div>

@@ -6,7 +6,7 @@ const IndustriesWeServe = () => {
     <section className="wrapper py-[4rem]">
       <div className="flex flex-col gap-5">
         <div data-aos="fade-up" className="flex flex-col items-center gap-4 text-center">
-          <SubHeading heading="Industries we serve" className="text-white" />
+          <SubHeading heading="Industries we serve" className="text-gray-800" />
           <h2 className="text1 text-3xl md:text-4xl font-bold">
             Transforming Industries with Tailored Solutions
           </h2>

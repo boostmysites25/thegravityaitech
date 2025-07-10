@@ -11,11 +11,9 @@ const Faq = ({ showButton }) => {
     <div className="py-7">
       <div className="wrapper space-y-5">
         <div>
-          <SubHeading heading="FAQ" className="text-white" />
+          <SubHeading heading="FAQ" className="text-gray-800" />
         </div>
-        <h2 className="text1 max-w-3xl">
-          Frequently Asked Questions
-        </h2>
+        <h2 className="text1 max-w-3xl">Frequently Asked Questions</h2>
         <div className="grid md:grid-cols-[45%_1fr] gap-7">
           <div className="flex flex-col rounded-xl overflow-hidden relative">
             <div className="absolute z-[1] right-2 top-2 bg-white text-primary p-5 rounded-[1rem] shadow-xl flex items-center gap-3">
@@ -37,11 +35,11 @@ const Faq = ({ showButton }) => {
               <div
                 onClick={() => setIsActive(item.id)}
                 key={item.id}
-                className="cursor-pointer p-4 rounded-lg bg-[#202022]"
+                className="cursor-pointer p-4 rounded-lg bg-gray-100 shadow-sm"
               >
                 <div className="flex justify-between gap-2">
                   <p className="text4">{item.question}</p>
-                  <div className="w-8 h-8 rounded-full min-w-8 border border-white flex items-center justify-center">
+                  <div className="w-8 h-8 rounded-full min-w-8 border border-gray-400 flex items-center justify-center">
                     <MdOutlineKeyboardArrowUp
                       className={
                         isActive === item.id &&
@@ -52,10 +50,11 @@ const Faq = ({ showButton }) => {
                   </div>
                 </div>
                 <p
-                  className={`${isActive === item.id
+                  className={`${
+                    isActive === item.id
                       ? "max-h-[500px] opacity-100"
                       : "max-h-0 opacity-0"
-                    } transition-all duration-300`}
+                  } transition-all duration-300`}
                 >
                   {item.answer}
                 </p>
@@ -67,7 +66,7 @@ const Faq = ({ showButton }) => {
           <div className="pt-7">
             <ArrowButton
               to="/contact-us"
-              className="bg-black border border-secondary text-white hover:bg-secondary !w-fit mx-auto"
+              className="bg-white border border-primary text-primary hover:bg-primary hover:text-white !w-fit mx-auto"
             >
               Have More Questions? Contact Us
             </ArrowButton>

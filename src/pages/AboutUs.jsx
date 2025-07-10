@@ -36,7 +36,7 @@ const AboutUs = () => {
                 Moves You Forward
               </span>
             </h2>
-            <p data-aos="fade-up" className="desc text-white/70">
+            <p data-aos="fade-up" className="desc">
               At The Gravity AI Tech, we craft smart digital solutions that make a real difference. From AI-powered calling systems and chatbots to immersive AR/VR and game development—we build what today’s businesses need. <br />
               Our team brings deep expertise in mobile apps, full-stack web development, cloud migration, and blockchain integration. We help companies automate, analyze, and innovate with tools like machine learning, NLP, IoT, and data science.<br />
               Whether you're growing fast or just getting started, we design technology that scales with you—and works for you.<br />
@@ -44,7 +44,7 @@ const AboutUs = () => {
 
             </p>
 
-            <div
+            {/* <div
               data-aos="fade-up"
               className="grid sm:grid-cols-2 md:grid-cols-4 gap-7"
             >
@@ -72,7 +72,7 @@ const AboutUs = () => {
                   </p>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -112,13 +112,7 @@ const AboutUs = () => {
             <h3 className="text2 text-primary">
               Our <br /> Mission
             </h3>
-            {/* <img
-              loading="lazy"
-              src={ourMissionImg}
-              className="block md:hidden object-cover aspect-video h-full w-full rounded-md"
-              alt="Our Vision"
-            /> */}
-            <p className="desc !text-white">
+            <p className="desc">
               Our mission is to drive bold innovation that empowers businesses to reach new heights. We deliver cutting-edge, adaptable technology solutions designed to evolve alongside the fast-paced digital landscape. By simplifying complexity into smart, actionable solutions, we enable organizations to overcome challenges, embrace emerging trends, and confidently shape their future. Committed to excellence and true collaboration, we create lasting value and meaningful impact for our clients and communities.
             </p>
           </div>

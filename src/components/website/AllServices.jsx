@@ -11,7 +11,7 @@ const AllServices = ({ length }) => {
     <div className="py-7">
       <div className="wrapper space-y-4 flex flex-col items-center">
         <div data-aos="fade-up">
-          <SubHeading heading="Our Services" className="text-white" />
+          <SubHeading heading="Our Services" className="text-gray-800" />
         </div>
         <h2 data-aos="fade-up" className="text1 text-center max-w-4xl mx-auto">
           Drive Growth with Advanced AI and IT Solutions
@@ -36,7 +36,7 @@ const AllServices = ({ length }) => {
                 <p className="desc">{item.desc}</p>
                 <div className={`pt-5 grid gap-5 sm:grid-cols-2`}>
                   <Link
-                    className="btn-rounded !p-2 border border-white text-white hover:bg-white hover:text-black flex items-center gap-2 w-full justify-center h-fit"
+                    className="btn-rounded !p-2 border border-primary text-primary hover:bg-primary hover:text-white flex items-center gap-2 w-full justify-center h-fit"
                     to={`/services/${createUrlParam(item.title)}`}
                     target="_blank"
                   >
@@ -44,7 +44,7 @@ const AllServices = ({ length }) => {
                   </Link>
                   {item.link && (
                     <Link
-                      className="btn-rounded !p-2 border border-white text-black bg-white hover:bg-black hover:text-white flex items-center gap-2 w-full justify-center h-fit"
+                      className="btn-rounded !p-2 border border-gray-800 text-white bg-gray-800 hover:bg-white hover:text-gray-800 flex items-center gap-2 w-full justify-center h-fit"
                       to={item.link}
                       target="_blank"
                     >
@@ -59,7 +59,7 @@ const AllServices = ({ length }) => {
         {length && (
           <div data-aos="fade-up">
             <Link
-              className="btn-rounded border border-primary text-white hover:bg-primary"
+              className="btn-rounded border border-primary text-primary hover:bg-primary hover:text-white"
               to="/services"
             >
               Discover All Our Services

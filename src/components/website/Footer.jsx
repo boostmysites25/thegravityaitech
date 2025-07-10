@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import bgImg from "../../assets/images/footer-bg.webp";
 import { companyDetails, logo } from "../../content/constant";
 import { websiteLinks } from "./Header";
 import { allServices } from "../../content/services";
@@ -10,11 +9,8 @@ import { createUrlParam } from "../../utils/helper";
 
 const Footer = () => {
   return (
-    <div className="pt-7">
-      <div
-        className="bg-cover bg-no-repeat bg-center pt-[5rem] pb-7 space-y-8"
-        style={{ backgroundImage: `url(${bgImg})` }}
-      >
+    <div className="pt-7 bg-secondary">
+      <div className="bg-cover pt-[5rem] pb-7 space-y-8">
         <div className="wrapper space-y-8">
           <div className="grid md:grid-cols-6 lg:grid-cols-[25%,1fr,1fr,1fr] gap-7">
             <div className="md:col-span-6 lg:col-span-1 flex justify-start">
@@ -28,6 +24,7 @@ const Footer = () => {
                 <div className="flex items-center gap-3 pt-3">
                   <Link
                     to={companyDetails.facebook}
+                    target="_blank"
                     className="w-8 h-8 flex items-center justify-center rounded transition-all duration-300 hover:border-primary group"
                   >
                     <FaFacebookF
@@ -37,6 +34,7 @@ const Footer = () => {
                   </Link>
                   <Link
                     to={companyDetails.linkedin}
+                    target="_blank"
                     className="w-8 h-8 flex items-center justify-center rounded transition-all duration-300 hover:border-primary group"
                   >
                     <FaLinkedinIn
@@ -46,6 +44,7 @@ const Footer = () => {
                   </Link>
                   <Link
                     to={companyDetails.instagram}
+                    target="_blank"
                     className="w-8 h-8 flex items-center justify-center rounded transition-all duration-300 hover:border-primary group"
                   >
                     <AiFillInstagram
@@ -56,6 +55,7 @@ const Footer = () => {
 
                   <Link
                     to={companyDetails.twitter}
+                    target="_blank"
                     className="w-8 h-8 flex items-center justify-center rounded transition-all duration-300 hover:border-primary group"
                   >
                     <FaXTwitter
@@ -96,11 +96,22 @@ const Footer = () => {
               </ul>
             </div>
             <div className="md:col-span-2 lg:col-span-1 space-y-6">
-              <h5 className="text4 underline underline-offset-4">Our Office</h5>
+              <h5 className="text4 underline underline-offset-4">Contact</h5>
               <ul className="flex flex-col gap-3">
                 <li className="text-sm">
-                  <Link to={`tel:${companyDetails.phone}`} className="link">
+                  <Link
+                    to={`tel:${companyDetails.phone.replace(/[+\s-]/g, "")}`}
+                    className="link"
+                  >
                     {companyDetails.phone}
+                  </Link>
+                </li>
+                <li className="text-sm">
+                  <Link
+                    to={`tel:${companyDetails.phone2.replace(/[+\s-]/g, "")}`}
+                    className="link"
+                  >
+                    {companyDetails.phone2}
                   </Link>
                 </li>
                 <li className="text-sm">
@@ -112,10 +123,10 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <hr className="border-white/20" />
-          <p className="text-sm text-center">
-            Copyright © {new Date().getFullYear()} The Gravity AI Tech |
-            All Rights Reserved
+          <hr className="border-gray-300" />
+          <p className="text-sm text-center text-gray-800">
+            Copyright © {new Date().getFullYear()} The Gravity AI Tech | All
+            Rights Reserved
           </p>
         </div>
       </div>

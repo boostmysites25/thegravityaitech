@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #333333;
 }
 
 * {
@@ -66,7 +66,7 @@ html {
 /* text stroke */
 .text-stroke {
   color: transparent;
-  -webkit-text-stroke: 1px #DBDD92;
+  -webkit-text-stroke: 1px #16a379;
 }
 
 .text-stroke-black {
@@ -76,12 +76,12 @@ html {
 
 .text-stroke-white {
   color: transparent;
-  -webkit-text-stroke: 1px #ffffff;
+  -webkit-text-stroke: 1px #333333;
 }
 
 /* menu offcanvas styles */
 .EZDrawer .EZDrawer__container {
-  background: #000000 !important;
+  background: #ffffff !important;
   width: 100vw !important;
   min-height: 100vh !important;
   overflow-y: scroll;
@@ -95,7 +95,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.726);
+  background-color: rgba(255, 255, 255, 0.8);
   position: fixed;
   top: 0;
   left: 0;
@@ -108,7 +108,7 @@ html {
   height: 48px;
   border-radius: 50%;
   display: inline-block;
-  border-top: 4px solid #fff;
+  border-top: 4px solid #16a379;
   border-right: 4px solid transparent;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;

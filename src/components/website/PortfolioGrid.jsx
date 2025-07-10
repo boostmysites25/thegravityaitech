@@ -70,7 +70,7 @@ const PortfolioGrid = () => {
             onClick={() => handleFilterClick(category.id)}
             className={`px-6 py-3 rounded-full transition-all duration-300 font-medium ${activeFilter === category.id
               ? "bg-primary text-white"
-              : "bg-white/10 text-white hover:bg-white/20"
+              : "bg-white/10 hover:bg-white/20 border"
               }`}
           >
             {category.name}
@@ -110,7 +110,7 @@ const PortfolioGrid = () => {
               <div className="text-center p-6">
                 <h3 className="text-white font-bold text-xl mb-2">{item.title}</h3>
                 <p className="text-white/90 mb-4 text-sm">
-                  {item.description}
+                  {item.description || `View the ${item.title} project details`}
                 </p>
                 <Link to={item.link} target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-white text-primary rounded-full font-medium hover:bg-secondary hover:text-black transition-all duration-300">
                   View Project

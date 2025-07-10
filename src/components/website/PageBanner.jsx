@@ -38,7 +38,7 @@ const PageBanner = ({ banner, title, links }) => {
           },
         }}
       />
-      <div className="absolute inset-0 text-white bg-black/50 z-[2] flex items-center">
+      <div className="absolute inset-0 text-gray-800 bg-white/80 z-[2] flex items-center">
         <div className="wrapper w-full grid grid-cols-[10%,1fr,10%] items-center h-full relative top-1/2 -translate-y-[50%]">
           <div className="flex flex-col gap-5 sm:gap-7">
             <Link
@@ -91,14 +91,22 @@ const PageBanner = ({ banner, title, links }) => {
               ))}
             </div>
           </div>
-          <div className="rotate-90 w-full flex justify-center">
+          <div className="sm:block hidden rotate-90 w-full flex justify-center">
             <div className="text-lg min-w-[12rem] -translate-y-[1rem] md:-translate-y-[2rem] lg:-translate-y-[3rem] flex justify-center">
-              <Link
-                to={`tel:${companyDetails.phone}`}
-                className="link flex items-center gap-2"
-              >
-                <ImPhone size={15} /> {companyDetails.phone}
-              </Link>
+              <div className="flex flex-col gap-3">
+                <Link
+                  to={`tel:${companyDetails.phone.replace(/[+\s-]/g, "")}`}
+                  className="link flex items-center gap-2"
+                >
+                  <ImPhone size={15} /> {companyDetails.phone}
+                </Link>
+                <Link
+                  to={`tel:${companyDetails.phone2.replace(/[+\s-]/g, "")}`}
+                  className="link flex items-center gap-2"
+                >
+                  <ImPhone size={15} /> {companyDetails.phone2}
+                </Link>
+              </div>
             </div>
           </div>
         </div>

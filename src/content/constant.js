@@ -3,50 +3,52 @@ import logo from "../assets/images/logo/logo.png";
 export { logo };
 
 export const companyDetails = {
-  phone: "+919925511716",
+  phone: "+91 9925511716",
+  phone2: "+1 903-913-6555",
   email: "info@thegravityaitech.com",
   address: "5900 Balcones Drive, Suite 100, Austin, Texas 78731, USA",
   facebook: "https://www.facebook.com/share/16QFivcYgp/?mibextid=wwXIfr",
   twitter: "https://www.linkedin.com/company/the-gravity-ai-tech/",
-  instagram: "https://www.instagram.com/the_gravity_ai_tech?igsh=Y25lcDZoa3AzaG5p&utm_source=qr",
+  instagram:
+    "https://www.instagram.com/the_gravity_ai_tech?igsh=Y25lcDZoa3AzaG5p&utm_source=qr",
   linkedin: "",
 };
 
 export const testimonials = [
   {
     id: 1,
-    img: require("../assets/images/testimonial/1.jpg"),
+    img: require("../assets/images/testimonial/3.webp"),
     quote: `“ The AI voice and video calling system helped us cut support costs by 60%. It’s like having a 24/7 human team—only smarter and faster. ”`,
     position: "Customer Experience Manager",
     author: "Sophie K.",
   },
   {
     id: 2,
-    img: require("../assets/images/testimonial/2.jpg"),
+    img: require("../assets/images/testimonial/2.webp"),
     quote: `“ Their chatbot is incredibly intuitive. It understands our users better than most humans do. It’s streamlined customer support and improved conversion rates significantly. ”`,
     position: "Head of Digital Operations",
-    author: "Rahul Shekhar",
+    author: "Michael Thompson",
   },
   {
     id: 3,
-    img: require("../assets/images/testimonial/3.jpg"),
+    img: require("../assets/images/testimonial/4.webp"),
     quote: `“ From design to backend logic, their full-stack team delivered beyond expectations. Our new website is fast, responsive, and already generating more leads. ”`,
     position: "Head of Marketing",
-    author: "Amit Sharma",
+    author: "Emily Harris",
   },
   {
     id: 4,
-    img: require("../assets/images/testimonial/4.jpg"),
+    img: require("../assets/images/testimonial/1.webp"),
     quote: `“ They developed our iOS and Android app with a flawless user experience. Fast, responsive, and bug-free—the app’s performance is exactly what we needed. ”`,
     position: "Founder",
-    author: "Kunal Kumar",
+    author: "Brian Cooper",
   },
   {
     id: 5,
-    img: require("../assets/images/testimonial/5.jpg"),
+    img: require("../assets/images/testimonial/5.webp"),
     quote: `“ Their ML model gave us customer predictions we can actually trust. It’s helped us boost sales and reduce churn—and keeps improving over time. ”`,
     position: "Co-Founder",
-    author: "Sushal Varma",
+    author: "Jessica Morgan",
   },
 ];
 
@@ -84,13 +86,15 @@ export const faqs = [
   },
   {
     id: 6,
-    question: "How can cloud computing and migration services help my business?",
+    question:
+      "How can cloud computing and migration services help my business?",
     answer:
       "We help businesses move to the cloud smoothly, reduce IT complexities, and scale with ease—whether starting fresh or upgrading from legacy systems. Our cloud solutions provide flexibility, security, and cost efficiency while ensuring minimal disruption to your operations and enabling faster deployment of new features.",
   },
   {
     id: 7,
-    question: "What data analytics and business intelligence services do you offer?",
+    question:
+      "What data analytics and business intelligence services do you offer?",
     answer:
       "We help teams make sense of their data—turning numbers into insights, dashboards into decisions, and strategies into real, measurable results. Our data analytics solutions include data warehouse design, ETL pipeline development, interactive dashboards, predictive analytics, and real-time data processing.",
   },
@@ -152,7 +156,6 @@ export const whyworkwithus = [
       "Our solutions are designed for long-term growth—scalable, flexible, and built to evolve with your business.",
   },
 ];
-
 
 // core values
 export const coreValues = [
@@ -270,26 +273,117 @@ export const webDevelopmentPortfolio = [
     id: 1,
     image: require("../assets/images/portfolio/web-development/cold-creekcap.webp"),
     title: "Cold Creekcap",
+    description: "Financial services and investment platform",
     link: "https://www.coldcreekcap.com",
   },
   {
     id: 2,
     image: require("../assets/images/portfolio/web-development/think-reality.webp"),
     title: "Think Reality",
+    description: "Real estate and property management website",
     link: "https://thinkrealty.ae",
   },
   {
     id: 3,
     image: require("../assets/images/portfolio/web-development/akash-mega-mart.webp"),
     title: "Akash Mega Mart",
+    description: "E-commerce platform for retail products",
     link: "https://akashmegamart.com/",
   },
   {
     id: 4,
     image: require("../assets/images/portfolio/web-development/midwam.webp"),
     title: "Midwam",
+    description: "Creative technology and innovation company",
     link: "https://www.midwam.com/en/about",
   },
+  {
+    id: 5,
+    image: require("../assets/images/portfolio/web-development/5ghomes.webp"),
+    title: "5G Homes",
+    description: "Smart home and IoT solutions platform",
+    link: "https://5ghomes.com",
+  },
+  {
+    id: 6,
+    image: require("../assets/images/portfolio/web-development/CoffeeLavka Express Track – Real-Time Coffee Order Tracking Platform.jpg"),
+    title: "CoffeeLavka Express Track",
+    description: "Real-Time Coffee Order Tracking Platform",
+    link: "https://coffeelavka.com",
+  },
+  {
+    id: 7,
+    image: require("../assets/images/portfolio/web-development/Crave Kitchen – Digital Food Hall Platform.png"),
+    title: "Crave Kitchen",
+    description: "Digital Food Hall Platform",
+    link: "https://cravekitchen.com",
+  },
+  {
+    id: 8,
+    image: require("../assets/images/portfolio/web-development/Fashion Journey Navigator – Personalized Style Discovery Platform.jpg"),
+    title: "Fashion Journey Navigator",
+    description: "Personalized Style Discovery Platform",
+    link: "https://fashionjourney.com",
+  },
+  {
+    id: 9,
+    image: require("../assets/images/portfolio/web-development/Interview Pro – Professional Interview Scheduling & Management Platform.jpg"),
+    title: "Interview Pro",
+    description: "Professional Interview Scheduling & Management Platform",
+    link: "https://interviewpro.ai",
+  },
+  {
+    id: 10,
+    image: require("../assets/images/portfolio/web-development/Mediverse Connect AI – AI-Powered Healthcare Networking Platform.jpg"),
+    title: "Mediverse Connect AI",
+    description: "AI-Powered Healthcare Networking Platform",
+    link: "https://mediverseconnect.ai",
+  },
+  {
+    id: 11,
+    image: require("../assets/images/portfolio/web-development/StreamVerse – Smart Rental Management Platform.jpg"),
+    title: "StreamVerse",
+    description: "Smart Rental Management Platform",
+    link: "https://streamverse.io",
+  },
+  {
+    id: 12,
+    image: require("../assets/images/portfolio/web-development/UPSC Aids – Personalized Mentorship & UPSC Preparation Dashboard.jpg"),
+    title: "UPSC Aids",
+    description: "Personalized Mentorship & UPSC Preparation Dashboard",
+    link: "https://upscaids.com",
+  },
+];
+
+// Recent projects
+export const recentProjects = [
+  {
+    id: 1,
+    image: require("../assets/images/portfolio/recent/Projectsy.ai – AI-Powered Project & Task Management Platform.jpg"),
+    title: "Projectsy.ai",
+    description: "AI-Powered Project & Task Management Platform",
+    link: "https://projectsy.ai",
+    category: "saas",
+    type: "SaaS Project"
+  },
+  {
+    id: 2,
+    image: require("../assets/images/portfolio/recent/Speaksify – AI-Powered Public Speaking Coach.jpg"),
+    title: "Speaksify",
+    description: "AI-Powered Public Speaking Coach",
+    link: "https://speaksify.com",
+    category: "ai",
+    type: "AI Calling Agency"
+  },
+  {
+    id: 3,
+    image: require("../assets/images/portfolio/recent/VirtuTeams – Team Management & Remote Operations Platform.jpg"),
+    title: "VirtuTeams",
+    description: "Team Management & Remote Operations Platform",
+    link: "https://virtuteams.com",
+    category: "saas",
+    type: "SaaS Project"
+  }
 ];
 
 // portfolio images (app development)
@@ -298,30 +392,70 @@ export const appDevelopmentPortfolio = [
     id: 1,
     image: require("../assets/images/portfolio/app-development/akash_mega_mart-app.webp"),
     title: "Akash Mega Mart Mobile App",
+    description: "E-commerce mobile application for retail shopping",
     link: "https://play.google.com/store/apps/details?id=com.app.akash_mega_mart",
   },
   {
     id: 2,
     image: require("../assets/images/portfolio/app-development/feelit_app.webp"),
     title: "Feel It Mobile App",
+    description: "Emotional wellness and mood tracking application",
     link: "https://play.google.com/store/apps/details?id=com.feelit.feelit_app",
   },
   {
     id: 3,
     image: require("../assets/images/portfolio/app-development/klikomics.webp"),
     title: "Klikomics Mobile App",
+    description: "Digital comics reading platform",
     link: "https://play.google.com/store/apps/details?id=com.klikomics.android&pcampaignid=web_share",
   },
   {
     id: 4,
     image: require("../assets/images/portfolio/app-development/autosnap-app.webp"),
     title: "AutoSnap Mobile App",
+    description: "Vehicle service and maintenance tracking app",
     link: "https://play.google.com/store/apps/details?id=com.Zigna.AutoSnap&pcampaignid=web_share",
   },
   {
     id: 5,
     image: require("../assets/images/portfolio/app-development/rentop.webp"),
     title: "Rentop Bike and Car",
+    description: "Vehicle rental and booking platform",
     link: "https://play.google.com/store/apps/details?id=com.rentop&pcampaignid=web_share",
+  },
+  {
+    id: 6,
+    image: require("../assets/images/portfolio/app-development/Bharat Meds – TrackNow Medicine Delivery & Tracking App.jpg"),
+    title: "Bharat Meds",
+    description: "TrackNow Medicine Delivery & Tracking App",
+    link: "https://bharatmeds.com",
+  },
+  {
+    id: 7,
+    image: require("../assets/images/portfolio/app-development/Crimson Classified Hub – Community-Driven Classifieds Platform.jpg"),
+    title: "Crimson Classified Hub",
+    description: "Community-Driven Classifieds Platform",
+    link: "https://crimsonclassifieds.com",
+  },
+  {
+    id: 8,
+    image: require("../assets/images/portfolio/app-development/Dubai Classifieds Pulse – Hyperlocal Classified Listings Platform.jpg"),
+    title: "Dubai Classifieds Pulse",
+    description: "Hyperlocal Classified Listings Platform",
+    link: "https://dubaipulse.ae",
+  },
+  {
+    id: 9,
+    image: require("../assets/images/portfolio/app-development/Ember – AI-Powered Soulmate Matching & Conversation Platform.jpg"),
+    title: "Ember",
+    description: "AI-Powered Soulmate Matching & Conversation Platform",
+    link: "https://emberapp.com",
+  },
+  {
+    id: 10,
+    image: require("../assets/images/portfolio/app-development/UrjaOne Nexus – Mobile Energy Services Marketplace.jpg"),
+    title: "UrjaOne Nexus",
+    description: "Mobile Energy Services Marketplace",
+    link: "https://urjaone.com",
   },
 ];

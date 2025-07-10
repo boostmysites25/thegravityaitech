@@ -60,7 +60,6 @@ const BrandLogos = () => {
           data-aos="fade-up"
           className="wrapper flex flex-col items-center gap-3"
         >
-          <SubHeading heading="Our Partners" className="text-white" />
           <h2 className="text1 text-center max-w-4xl mx-auto">
             Join our happy clients
           </h2>

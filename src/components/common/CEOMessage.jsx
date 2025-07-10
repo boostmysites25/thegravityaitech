@@ -1,13 +1,13 @@
 import React from "react";
 import SubHeading from "./SubHeading";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
-import ceoImage from "../../assets/images/ceo.webp"; // You'll need to add this image to your assets
+import ceoImage from "../../assets/images/ceo.png";
 
 const CEOMessage = () => {
   return (
     <section className="py-20 relative overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-black/95 to-black z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-gray-50 to-white z-0"></div>
 
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
@@ -18,8 +18,8 @@ const CEOMessage = () => {
       <div className="wrapper relative z-10">
         <div data-aos="fade-up" className="flex justify-center mb-10">
           <SubHeading
-            heading="A Message From Our CEO"
-            className="text-white"
+            heading="CHINTAN PATEL"
+            className="text-gray-800"
           />
         </div>
 
@@ -43,12 +43,12 @@ const CEOMessage = () => {
           <div data-aos="fade-left" className="relative space-y-6">
             <FaQuoteLeft className="text-primary/30 text-6xl absolute -top-10 -left-4" />
 
-            <h2 className="text2 text-white">
+            <h2 className="text2 text-gray-800">
               Transforming Ideas into{" "}
               <span className="text-primary">Intelligent Solutions</span>
             </h2>
 
-            <div className="space-y-4 text-gray-300 relative">
+            <div className="space-y-4 text-gray-700 relative">
               <p className="desc leading-relaxed">
                 At The Gravity AI Tech, we believe that technology should not
                 only solve today's challenges but anticipate tomorrow's

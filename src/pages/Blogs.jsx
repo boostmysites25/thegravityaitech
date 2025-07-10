@@ -7,7 +7,7 @@ import banner from "../assets/videos/blogs.mp4";
 
 const Blogs = () => {
   return (
-    <div className="mt-[5.5rem] lg:mt-[9rem] min-h-screen text-white max-w-[100vw]">
+    <div className="mt-[5.5rem] lg:mt-[9rem] min-h-screen max-w-[100vw]">
       <PageBanner
         banner={banner}
         title="Blogs"
@@ -23,7 +23,7 @@ const Blogs = () => {
           {blogs.map((blog) => (
             <motion.div
               key={blog.id}
-              className="bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700 overflow-hidden hover:shadow-lg hover:shadow-primary/10 transition-all duration-300"
+              className="backdrop-blur-sm rounded-xl border border-gray-700 overflow-hidden hover:shadow-lg hover:shadow-primary/10 transition-all duration-300"
               whileHover={{ y: -10 }}
             >
               <div className="h-52 md:h-72 overflow-hidden">
@@ -34,14 +34,14 @@ const Blogs = () => {
                 />
               </div>
               <div className="p-6">
-                <div className="flex flex-wrap items-center text-sm text-gray-400 mb-3 gap-4">
+                <div className="flex flex-wrap items-center text-sm mb-3 gap-4">
                   <span className="flex items-center">
                     <FaCalendarAlt className="mr-2" />
                     {blog.date}
                   </span>
                 </div>
                 <h3 className="text-xl font-bold mb-3">{blog.title}</h3>
-                <p className="text-gray-300 mb-4 line-clamp-3">
+                <p className="mb-4 line-clamp-3">
                   {blog.content.replace(/<[^>]*>"?/gm, "").substring(0, 150)}...
                 </p>
                 <Link

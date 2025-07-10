@@ -10,15 +10,21 @@ const ServicesSection = ({ page }) => {
   const services = isWeb ? webDevelopmentServices : appDevelopmentServices;
 
   return (
-    <div id="services" className="py-16 bg-gradient-to-b from-black to-black/90">
+    <div
+      id="services"
+      className="py-16 bg-gradient-to-b from-primary/5 to-secondary/5"
+    >
       <div className="wrapper space-y-8 flex flex-col items-center">
         <div data-aos="fade-up" className="text-center">
-          <SubHeading heading={`Our ${isWeb ? "Web" : "App"} Development Services`} className="text-secondary" />
+          <SubHeading
+            heading={`Our ${isWeb ? "Web" : "App"} Development Services`}
+            className="text-black"
+          />
         </div>
 
         <h2
           data-aos="fade-up"
-          className="text1 text-center max-w-4xl mx-auto bg-clip-text text-transparent bg-gradient-to-r from-white to-secondary"
+          className="text1 text-center max-w-4xl mx-auto bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary"
         >
           {isWeb
             ? "Transform Your Online Presence with Cutting-Edge Web Solutions"
@@ -33,11 +39,12 @@ const ServicesSection = ({ page }) => {
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
-              <div className="bg-black/40 backdrop-blur-sm border-2 border-primary/30 p-6 rounded-2xl 
+              <div
+                className="bg-secondary/5 backdrop-blur-sm border-2 border-primary/30 p-6 rounded-2xl 
                             hover:-translate-y-2 transition-all duration-500 
                             hover:shadow-large hover:shadow-primary/40 
-                            hover:border-primary h-full flex flex-col">
-
+                            hover:border-primary h-full flex flex-col"
+              >
                 <div className="aspect-video rounded-xl overflow-hidden mb-5 relative">
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent z-10"></div>
                   <img
@@ -48,11 +55,11 @@ const ServicesSection = ({ page }) => {
                   />
                 </div>
 
-                <h4 className="text3 text-secondary mb-3 group-hover:text-primary transition-colors duration-300">
+                <h4 className="text3 text-primary mb-3 transition-colors duration-300">
                   {service.title}
                 </h4>
 
-                <p className="desc text-gray-300 flex-grow">
+                <p className="desc flex-grow">
                   {service.description}
                 </p>
               </div>

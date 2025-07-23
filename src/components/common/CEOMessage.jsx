@@ -18,12 +18,12 @@ const CEOMessage = () => {
       <div className="wrapper relative z-10">
         <div data-aos="fade-up" className="flex justify-center mb-10">
           <SubHeading
-            heading="CHINTAN PATEL"
-            className="text-gray-800"
+            heading="A Message from Our Founder and CEO - Dr. Chintan Patel"
+            className="text-primary font-semibold text-lg md:!text-2xl"
           />
         </div>
 
-        <div className="grid md:grid-cols-[1fr,1.5fr] gap-10 items-center">
+        <div className="pt-4 grid md:grid-cols-[1fr,1.5fr] gap-10 items-center">
           {/* CEO Image */}
           <div data-aos="fade-right" className="relative mx-auto max-w-md">
             <div className="relative z-10 rounded-2xl overflow-hidden border-2 border-primary/30 shadow-large shadow-primary/20">

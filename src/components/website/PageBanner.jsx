@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaYoutube } from "react-icons/fa6";
 import ReactPlayer from "react-player";
 import { companyDetails } from "../../content/constant";
 import { ImPhone } from "react-icons/im";
@@ -47,6 +47,13 @@ const PageBanner = ({ banner, title, links }) => {
               className="w-[1.75rem] h-[1.75rem] bg-white rounded-full text-black hover:bg-tertiary hover:text-primary transition duration-200 flex justify-center items-center"
             >
               <FaLinkedinIn size={17} />
+            </Link>
+            <Link
+              target="_blank"
+              to={companyDetails.youtube}
+              className="w-[1.75rem] h-[1.75rem] bg-white rounded-full text-black hover:bg-tertiary hover:text-primary transition duration-200 flex justify-center items-center"
+            >
+              <FaYoutube size={17} />
             </Link>
             <Link
               target="_blank"

@@ -4,8 +4,8 @@ import SubHeading from "../components/common/SubHeading";
 import ArrowButton from "../components/common/ArrowButton";
 import { Link } from "react-router-dom";
 import CircularText from "../components/common/CircularText";
-import heroImg from "../assets/images/home-hero.webp";
-import aboutImg from "../assets/images/home-about.webp";
+import heroImg from "../assets/images/home-hero.png";
+import aboutImg from "../assets/images/home-about.png";
 import { PiStrategyBold } from "react-icons/pi";
 import { MdSecurity } from "react-icons/md";
 import { lazy } from "react";
@@ -56,13 +56,16 @@ const Home = () => {
           }}
         />
         <div className="wrapper absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] flex flex-col-reverse gap-5 sm:grid grid-cols-[1fr,20%] items-center">
-          <div data-aos="fade-up" className="max-w-[50rem] space-y-1">
-            <SubHeading heading="Growth Accelerator" className="text-gray-800" />
+          <div data-aos="fade-up" className="max-w-[50rem] space-y-3">
+            <SubHeading
+              heading="Growth Accelerator"
+              className="!text-2xl font-semibold text-primary"
+            />
             <h1 className="text_xl">
               We Power Innovation Through{" "}
               <span className="text-primary">AI, Data, and Emerging Tech</span>
             </h1>
-            <p className="desc !text-xl">
+            <p className="desc !text-2xl font-semibold text-primary">
               Elevating Potential, Empowering Tomorrow
             </p>
             <div className="pt-10 flex sm:flex-row flex-col items-center gap-2">
@@ -72,7 +75,7 @@ const Home = () => {
               >
                 Get A Free Consultation
               </ArrowButton>
-              <Link className="w-full sm:min-w-[10rem] sm:w-auto text-center btn-rounded border border-gray-800 text-gray-800 bg-transparent hover:bg-gray-800 hover:text-white">
+              <Link className="bg-primary text-white hover:bg-transparent hover:text-primary border border-primary btn-rounded">
                 Our Services
               </Link>
             </div>
@@ -98,7 +101,6 @@ const Home = () => {
             data-aos="fade-right"
           />
           <div className="p-5">
-            {/* <div className="2xl:absolute right-0 top-1/2 2xl:-translate-y-1/2 p-5 2xl:px-10 "> */}
             <p
               data-aos="fade-left"
               className="text-lg md:text-2xl !font-normal text-gray-800"
@@ -116,13 +118,13 @@ const Home = () => {
         <div data-aos="fade-up" className="flex justify-center">
           <SubHeading heading="About Us" className="text-gray-800" />
         </div>
-        <div className="grid md:grid-cols-[40%,1fr] gap-10">
+        <div className="grid md:grid-cols-[45%,1fr] gap-10">
           <div className="relative w-full rounded-[3rem] overflow-hidden">
             <img
               loading="lazy"
               data-aos="fade-right"
               src={aboutImg}
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full object-center object-cover rounded-lg"
               alt="About Us"
             />
             <div
@@ -136,19 +138,24 @@ const Home = () => {
           <div data-aos="fade-up" className="space-y-3">
             <h2 className="text1">Technology That Moves You Forward</h2>
             <p className="desc text-gray-700">
-              At The Gravity AI Tech, we craft smart digital solutions that make
-              a real difference. From AI-powered calling systems and chatbots to
-              immersive AR/VR and game development—we build what today’s
-              businesses need. <br />
-              <br />
-              Our team brings deep expertise in mobile apps, full-stack web
-              development, cloud migration, and blockchain integration. We help
-              companies automate, analyze, and innovate with tools like machine
-              learning, NLP, IoT, and data science.
+              At The Gravity AI Tech, we craft smart AI-Powered solutions that
+              make a real difference. From AI-powered calling systems and AI
+              Automation for Businesses to Custom AI Model Development and AI
+              Software Development —we build what today’s businesses need.{" "}
               <br />
               <br />
-              Whether you're growing fast or just getting started, we design
-              technology that scales with you—and works for you.
+              Our team brings deep expertise in Generative AI Solutions, Agentic
+              AI Solutions, Blockchain Development, Cloud Services, Internet of
+              Things (IoT) Development, Virtual Reality (VR) & Augmented Reality
+              (AR), Game Development, Data Analytics & Business Intelligence,
+              App & Web Development, Robotic Process Automation. We help
+              companies automate, analyze, and innovate with the use of AI
+              technology. <br />
+              <br />
+              Whether you are growing fast or just getting started, we design
+              technology that scales with you and works for you. 
+              <br />
+              Let’s create something remarkable, together.
             </p>
             <div className="grid sm:grid-cols-2 gap-3 py-6">
               <div className="bg-gray-100 flex items-center gap-3 justify-center rounded p-3">
@@ -181,7 +188,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <AllServices length={9} />
+      <AllServices length={15} />
       <OurProcess showButton={true} />
       <CEOMessage />
       <IndustriesWeServe />

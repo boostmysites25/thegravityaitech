@@ -8,10 +8,11 @@ export const companyDetails = {
   email: "info@thegravityaitech.com",
   address: "5900 Balcones Drive, Suite 100, Austin, Texas 78731, USA",
   facebook: "https://www.facebook.com/share/16QFivcYgp/?mibextid=wwXIfr",
-  twitter: "https://www.linkedin.com/company/the-gravity-ai-tech/",
+  twitter: "https://x.com/TheGravityAI56",
   instagram:
     "https://www.instagram.com/the_gravity_ai_tech?igsh=Y25lcDZoa3AzaG5p&utm_source=qr",
   linkedin: "https://www.linkedin.com/company/the-gravity-ai-tech/",
+  youtube: "https://www.youtube.com/channel/UCsbSGClBnEGhBkbghQ-4rtg",
 };
 
 export const testimonials = [
@@ -49,6 +50,42 @@ export const testimonials = [
     quote: `“ Their ML model gave us customer predictions we can actually trust. It’s helped us boost sales and reduce churn—and keeps improving over time. ”`,
     position: "Co-Founder",
     author: "Jessica Morgan",
+  },
+  {
+    id: 6,
+    quote: `“ The Gravity AI Tech team was a game changer for our logistics company. Their automation solutions saved us countless hours every week.”`,
+    position: "Logistics Director",
+    author: "James Anderson",
+  },
+  {
+    id: 7,
+    quote: `“ Their AI-powered analytics gave us insights we never thought possible. Our marketing ROI has never been higher.”`,
+    position: "VP of Marketing",
+    author: "Ashley Johnson",
+  },
+  {
+    id: 8,
+    quote: `“ We needed a custom chatbot for our e-commerce site, and they delivered exactly what we wanted—on time and on budget.”`,
+    position: "E-commerce Manager",
+    author: "Christopher Lee",
+  },
+  {
+    id: 9,
+    quote: `“ The Gravity AI Tech team is responsive, knowledgeable, and truly cares about our success. Highly recommended!”`,
+    position: "Operations Manager",
+    author: "Amanda Martinez",
+  },
+  {
+    id: 10,
+    quote: `“ Their cloud migration service was seamless. We experienced zero downtime and immediate performance improvements.”`,
+    position: "IT Director",
+    author: "Matthew Clark",
+  },
+  {
+    id: 11,
+    quote: `“ We’ve worked with many tech vendors, but none have matched their level of expertise and customer service.”`,
+    position: "CEO",
+    author: "Olivia Walker",
   },
 ];
 
@@ -364,7 +401,7 @@ export const recentProjects = [
     description: "AI-Powered Project & Task Management Platform",
     link: "https://projectsy.ai",
     category: "saas",
-    type: "SaaS Project"
+    type: "SaaS Project",
   },
   {
     id: 2,
@@ -373,7 +410,7 @@ export const recentProjects = [
     description: "AI-Powered Public Speaking Coach",
     link: "https://speaksify.com",
     category: "ai",
-    type: "AI Calling Agency"
+    type: "AI Calling Agency",
   },
   {
     id: 3,
@@ -382,8 +419,8 @@ export const recentProjects = [
     description: "Team Management & Remote Operations Platform",
     link: "https://virtuteams.com",
     category: "saas",
-    type: "SaaS Project"
-  }
+    type: "SaaS Project",
+  },
 ];
 
 // portfolio images (app development)

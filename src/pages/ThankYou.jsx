@@ -1,6 +1,6 @@
 import React from "react";
 import { companyDetails, logo } from "../content/constant";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
@@ -52,6 +52,16 @@ const ThankYou = () => {
                 className="md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-300 md:hover:border-primary text-black md:text-white md:border border-white group"
               >
                 <FaLinkedinIn
+                  size={18}
+                  className="fill-black md:fill-white group-hover:fill-primary md:group-hover:text-black"
+                />
+              </Link>
+              <Link
+                to={companyDetails.youtube}
+                target="_blank"
+                className="md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-300 md:hover:border-primary text-black md:text-white md:border border-white group"
+              >
+                <FaYoutube
                   size={18}
                   className="fill-black md:fill-white group-hover:fill-primary md:group-hover:text-black"
                 />

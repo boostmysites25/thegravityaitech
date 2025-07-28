@@ -3,7 +3,7 @@ import SubHeading from "./SubHeading";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { companyDetails } from "../../content/constant";
 import { AiFillInstagram } from "react-icons/ai";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaYoutube } from "react-icons/fa6";
 import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { PiSpinnerGapLight } from "react-icons/pi";
@@ -72,20 +72,23 @@ const ContactForm = () => {
           <SubHeading heading="Contact Us" className="text-gray-800" />
           <h2 className="text1">Get In Touch</h2>
           <p className="desc text-gray-700">
-            We’d love to hear from you! Whether you’re curious about how
-            AI-powered calling, chatbots, blockchain, or any of our other tech
-            solutions can help your business, we’re here to help. <br />
-            <br />
-            At The Gravity AI Tech, we offer a wide range of services—from cloud
-            computing and data analytics to VR/AR development and mobile
-            apps—all designed to solve real challenges and deliver real results.
-            Whatever your project or question, our team is ready to listen and
-            provide the right expertise.
-            <br />
-            <br />
-            Reach out anytime by phone, email, or drop by our office. Or simply
-            fill out the form below, and we’ll get back to you as soon as
-            possible.
+            Welcome to The Gravity AI Tech, where innovation meets precision in the dynamic digital era. We deliver cutting-edge solutions—from custom software to AI-powered systems—that bring your ideas to life. Whether you are a startup founder, an enterprise executive, Big firm Business owner or an entrepreneur exploring the next frontier, you have come to the right place for all your enquiries.<br /><br />
+            Our team thrives on collaboration and creative problem-solving. We understand that every project is unique, so we are here to guide you every step of the way. Let’s start a conversation and explore how we can turn your vision into reality.
+            {/* <br /><br />
+            <strong>Give Us a Call</strong><br />
+            Need real-time answers? Call us at<br />
+            +1 903-913-6555 (USA)<br />
+            +91 99255 11716 (India)<br />
+            Our experts are standing by to discuss your project goals and provide instant support.<br /><br />
+            <strong>Email Us</strong><br />
+            Prefer to write? Drop us a line at <a href="mailto:info@thegravityaitech.com" className="text-primary underline">info@thegravityaitech.com</a>. We respond quickly with detailed, personalized information to address your specific enquiry.<br /><br />
+            <strong>Visit Our Location</strong><br />
+            Want to meet face-to-face? Visit our flagship office at:<br />
+            5900 Balcones Drive, Suite 100, Austin, Texas 78731, USA<br />
+            We serve clients globally, so even if you are halfway around the world, we are ready to connect.<br /><br />
+            We operate around the clock to ensure you can reach us whenever inspiration strikes or urgent questions arise.<br /><br />
+            <strong>Ready to Get Started?</strong><br />
+            Looking for expert AI solutions that push boundaries? Contact Us today and let’s begin crafting your next breakthrough! */}
           </p>
           <div className="flex items-center gap-3">
             <Link to={companyDetails.facebook} target="_blank" className="link">
@@ -100,6 +103,9 @@ const ContactForm = () => {
             </Link>
             <Link to={companyDetails.linkedin} target="_blank" className="link">
               <FaLinkedin size={40} />
+            </Link>
+            <Link to={companyDetails.youtube} target="_blank" className="link">
+              <FaYoutube size={40} />
             </Link>
             <Link to={companyDetails.twitter} target="_blank" className="link">
               <FaXTwitter size={40} />

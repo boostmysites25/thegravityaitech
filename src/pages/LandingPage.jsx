@@ -4,7 +4,6 @@ import SubHeading from "../components/common/SubHeading";
 import ArrowButton from "../components/common/ArrowButton";
 import { Link } from "react-scroll";
 import CircularText from "../components/common/CircularText";
-import heroImg from "../assets/images/home-hero.webp";
 import webAboutImg from "../assets/images/landing page/web-about.webp";
 import appAboutImg from "../assets/images/landing page/app-about.webp";
 import { PiStrategyBold } from "react-icons/pi";
@@ -71,7 +70,7 @@ const LandingPage = ({ page }) => {
                   ? "Web Development Experts"
                   : "App Development Specialists"
               }
-              className="text-black"
+              className="!text-2xl font-semibold text-primary"
             />
             <h1 className="text_xl">
               Building the Future with{" "}
@@ -80,7 +79,7 @@ const LandingPage = ({ page }) => {
               </span>
             </h1>
 
-            <p className="desc">
+            <p className="desc !text-2xl font-semibold text-primary">
               {isWeb
                 ? "Designing high-impact websites that boost engagement and accelerate growth."
                 : "Building next-gen mobile apps that deliver intuitive and seamless experiences."}
@@ -100,7 +99,7 @@ const LandingPage = ({ page }) => {
                 smooth
                 duration={500}
                 spy
-                className="w-full sm:min-w-[10rem] sm:w-auto text-center btn-rounded border border-black text-black bg-transparent hover:bg-black hover:text-white"
+                className="btn-rounded bg-primary text-white hover:bg-transparent hover:text-primary border border-primary"
               >
                 Explore Our {isWeb ? "Web" : "App"} Services
               </Link>

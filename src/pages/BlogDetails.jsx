@@ -32,7 +32,7 @@ const BlogDetails = () => {
       .replace(/<[^>]*>?/gm, "")}...`;
 
   return (
-    <div className="mt-[5.5rem] lg:mt-[9rem] min-h-screen text-white max-w-[100vw]">
+    <div className="mt-[5.5rem] lg:mt-[9rem] min-h-screen max-w-[100vw]">
       {/* Meta Tags */}
       <Helmet>
         <title>{blog.title} | The Gravity AI Technologies</title>
@@ -50,7 +50,7 @@ const BlogDetails = () => {
       <div className="wrapper pt-6">
         <Link
           to="/blogs"
-          className="inline-flex items-center text-gray-400 hover:text-primary transition-colors duration-300"
+          className="inline-flex items-center hover:text-primary transition-colors duration-300"
         >
           <FaArrowLeft className="mr-2" /> Back to Blogs
         </Link>
@@ -59,12 +59,12 @@ const BlogDetails = () => {
       {/* Hero Section */}
       <div className="wrapper py-8 md:py-12">
         <h1 className="text1 mb-6">{blog.title}</h1>
-        <div className="flex flex-wrap items-center text-sm text-gray-400 mb-4 gap-4">
+        {/* <div className="flex flex-wrap items-center text-sm text-gray-400 mb-4 gap-4">
           <span className="flex items-center">
             <FaCalendarAlt className="mr-2" />
             {blog.date}
           </span>
-        </div>
+        </div> */}
       </div>
 
       {/* Featured Image */}
@@ -92,7 +92,7 @@ const BlogDetails = () => {
           />
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 bg-gradient-to-r from-gray-800 to-gray-900 rounded-xl border border-gray-700 text-center">
+          <div className="mt-16 p-8 bg-gradient-to-r text-white from-gray-800 to-gray-900 rounded-xl border border-gray-700 text-center">
             <h3 className="text2 font-bold mb-4">
               Ready to Transform Your Business?
             </h3>

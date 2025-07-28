@@ -7,7 +7,7 @@ import { IoClose, IoMail } from "react-icons/io5";
 import { ImPhone } from "react-icons/im";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { AiFillInstagram } from "react-icons/ai";
+import { AiFillInstagram, AiFillYoutube } from "react-icons/ai";
 import { Link as Scroll } from "react-scroll";
 
 export const links = [
@@ -70,12 +70,23 @@ const Header = () => {
                   className="fill-black group-hover:fill-primary md:group-hover:text-black"
                 />
               </Link>
+              
               <Link
                 to={companyDetails.instagram}
                 target="_blank"
                 className="md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-300 md:hover:border-primary text-black md:text-white md:border border-black group"
               >
                 <AiFillInstagram
+                  size={18}
+                  className="fill-black group-hover:fill-primary md:group-hover:text-black"
+                />
+              </Link>
+              <Link
+                to={companyDetails.youtube}
+                target="_blank"
+                className="md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-300 md:hover:border-primary text-black md:text-white md:border border-black group"
+              >
+                <AiFillYoutube
                   size={18}
                   className="fill-black group-hover:fill-primary md:group-hover:text-black"
                 />
@@ -137,7 +148,7 @@ const Header = () => {
                     offset={-150}
                     className={`${
                       pathname === link.url ? "text-primary" : "text-gray-800"
-                    } link`}
+                    } link text-lg font-medium`}
                   >
                     {link.title}
                   </Scroll>
@@ -146,7 +157,7 @@ const Header = () => {
             </div>
             <div data-aos="fade-down" className="hidden xl:flex">
               <Link
-                to={`tel:${companyDetails.phone}`}
+                to={`tel:${companyDetails.phone.replace(/[+\s-]/g, "")}`}
                 className="btn-fullrounded bg-primary text-white hover:bg-gray-100 hover:text-primary border border-primary"
               >
                 Let's Talk

@@ -39,10 +39,10 @@ html {
     @apply text-base leading-relaxed;
   }
   .btn-fullrounded {
-    @apply cursor-pointer p-3 text-sm text-center rounded-full transition-all duration-300;
+    @apply cursor-pointer p-3 text-base font-semibold text-center rounded-full transition-all duration-300;
   }
   .btn-rounded {
-    @apply cursor-pointer text-sm rounded-md p-3 transition-all duration-300 text-center;
+    @apply cursor-pointer text-base font-semibold rounded-md p-3 transition-all duration-300 text-center;
   }
   .link {
     @apply hover:text-primary cursor-pointer transition-all duration-300;

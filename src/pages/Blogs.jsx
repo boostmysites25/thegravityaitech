@@ -10,8 +10,8 @@ const Blogs = () => {
     <div className="mt-[5.5rem] lg:mt-[9rem] min-h-screen max-w-[100vw]">
       <PageBanner
         banner={banner}
-        title="Blogs"
-        links={[{ title: "Home", url: "/" }, { title: "Blogs" }]}
+        title="Blogs/Research"
+        links={[{ title: "Home", url: "/" }, { title: "Blogs/Research" }]}
       />
 
       {/* Glowing Divider */}
@@ -34,12 +34,12 @@ const Blogs = () => {
                 />
               </div>
               <div className="p-6">
-                <div className="flex flex-wrap items-center text-sm mb-3 gap-4">
+                {/* <div className="flex flex-wrap items-center text-sm mb-3 gap-4">
                   <span className="flex items-center">
                     <FaCalendarAlt className="mr-2" />
                     {blog.date}
                   </span>
-                </div>
+                </div> */}
                 <h3 className="text-xl font-bold mb-3">{blog.title}</h3>
                 <p className="mb-4 line-clamp-3">
                   {blog.content.replace(/<[^>]*>"?/gm, "").substring(0, 150)}...

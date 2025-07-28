@@ -22,6 +22,7 @@ const BlogDetails = lazy(() => import("./pages/BlogDetails"));
 const ContactUs = lazy(() => import("./pages/ContactUs"));
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const ThankYou = lazy(() => import("./pages/ThankYou"));
+const FAQ = lazy(() => import("./pages/FAQ"));
 
 AOS.init({
   once: true,
@@ -48,6 +49,7 @@ function App() {
               <Route path="services" element={<OurServices />} />
               <Route path="services/:page" element={<ServiceDetails />} />
               <Route path="contact-us" element={<ContactUs />} />
+              <Route path="faq" element={<FAQ />} />
             </Route>
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/" element={<LandingPageLayout />}>

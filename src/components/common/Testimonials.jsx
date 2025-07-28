@@ -1,9 +1,10 @@
 import React from "react";
 import SubHeading from "./SubHeading";
-import img from "../../assets/images/testimonials-img.webp";
+import img from "../../assets/images/testimonials-img.png";
 import { useKeenSlider } from "keen-slider/react";
 import { testimonials } from "../../content/constant";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+import { FaUserCircle } from "react-icons/fa";
 
 const Testimonials = () => {
   const [sliderRef, instanceRef] = useKeenSlider(
@@ -79,12 +80,16 @@ const Testimonials = () => {
                   className="keen-slider__slide text-black space-y-5 md:pr-[4rem]"
                 >
                   <div className="flex items-center gap-2">
-                    <img
-                      loading="lazy"
-                      src={item.img}
-                      className="w-[3rem] min-w-[3rem] h-[3rem] rounded-full object-cover"
-                      alt={item.author}
-                    />
+                    {item.img ? (
+                      <img
+                        loading="lazy"
+                        src={item.img}
+                        className="w-[3rem] min-w-[3rem] h-[3rem] rounded-full object-cover"
+                        alt={item.author}
+                      />
+                    ) : (
+                      <FaUserCircle className="w-[3rem] h-[3rem] text-gray-400" />
+                    )}
                     <div>
                       <h4 className="text4">{item.author}</h4>
                       <p className="text-black/70">{item.position}</p>

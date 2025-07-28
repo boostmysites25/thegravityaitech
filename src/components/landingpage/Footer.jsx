@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { companyDetails, logo } from "../../content/constant";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaYoutube } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -40,6 +40,16 @@ const Footer = () => {
                     />
                   </Link>
                   <Link
+                    to={companyDetails.youtube}
+                    target="_blank"
+                    className="w-8 h-8 flex items-center justify-center rounded transition-all duration-300 hover:border-primary group"
+                  >
+                    <FaYoutube
+                      size={18}
+                      className="group-hover:fill-primary group-hover:text-black"
+                    />
+                  </Link>
+                  <Link
                     to={companyDetails.instagram}
                     target="_blank"
                     className="w-8 h-8 flex items-center justify-center rounded transition-all duration-300 hover:border-primary group"
@@ -66,7 +76,7 @@ const Footer = () => {
             <div className="space-y-3">
               <h5 className="text4 underline underline-offset-4">Contact</h5>
               <ul className="flex flex-col gap-2 list-disc pl-5">
-                <li className="text-sm">
+                <li className="">
                   <Link
                     to={`tel:${companyDetails.phone.replace(/[+\s-]/g, "")}`}
                     className="link"
@@ -74,7 +84,7 @@ const Footer = () => {
                     {companyDetails.phone}
                   </Link>
                 </li>
-                <li className="text-sm">
+                <li className="">
                   <Link
                     to={`tel:${companyDetails.phone2.replace(/[+\s-]/g, "")}`}
                     className="link"
@@ -82,17 +92,17 @@ const Footer = () => {
                     {companyDetails.phone2}
                   </Link>
                 </li>
-                <li className="text-sm">
+                <li className="">
                   <Link to={`mailto:${companyDetails.email}`} className="link">
                     {companyDetails.email}
                   </Link>
                 </li>
-                <li className="text-sm max-w-sm">{companyDetails.address}</li>
+                <li className=" max-w-sm">{companyDetails.address}</li>
               </ul>
             </div>
           </div>
           <hr className="border-gray-300" />
-          <p className="text-sm text-center text-gray-800">
+          <p className=" text-center text-gray-800">
             Copyright © {new Date().getFullYear()} The Gravity AI Tech| All
             Rights Reserved
           </p>

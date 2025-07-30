@@ -309,86 +309,668 @@ export const webDevelopmentPortfolio = [
   {
     id: 1,
     image: require("../assets/images/portfolio/web-development/cold-creekcap.webp"),
-    title: "Cold Creekcap",
-    description: "Financial services and investment platform",
+    title: "Cold Creek Capital",
+    description:
+      "Financial services and investment platform with a minimalist design, sharp typography, and detailed service breakdowns",
     link: "https://www.coldcreekcap.com",
   },
   {
     id: 2,
     image: require("../assets/images/portfolio/web-development/think-reality.webp"),
-    title: "Think Reality",
-    description: "Real estate and property management website",
+    title: "ThinkRealty",
+    description:
+      "Premium property portal for the UAE market with advanced property filtering, project highlights, and multilingual support",
     link: "https://thinkrealty.ae",
   },
   {
     id: 3,
     image: require("../assets/images/portfolio/web-development/akash-mega-mart.webp"),
     title: "Akash Mega Mart",
-    description: "E-commerce platform for retail products",
+    description:
+      "E-commerce platform for retail products with seamless checkout and product filtering",
     link: "https://akashmegamart.com/",
   },
   {
     id: 4,
     image: require("../assets/images/portfolio/web-development/midwam.webp"),
     title: "Midwam",
-    description: "Creative technology and innovation company",
+    description:
+      "Creative technology and innovation company combining immersive visuals with clean interface for exhibitions, VR, AR, and live experiences",
     link: "https://www.midwam.com/en/about",
   },
   {
     id: 5,
     image: require("../assets/images/portfolio/web-development/5ghomes.webp"),
-    title: "5G Homes",
-    description: "Smart home and IoT solutions platform",
+    title: "5G High Speed Internet",
+    description:
+      "Promotional website for broadband service provider with plan comparisons, service availability checkers, and inquiry forms",
     link: "https://5ghomes.com",
   },
   {
     id: 6,
-    image: require("../assets/images/portfolio/web-development/CoffeeLavka Express Track – Real-Time Coffee Order Tracking Platform.jpg"),
-    title: "CoffeeLavka Express Track",
-    description: "Real-Time Coffee Order Tracking Platform",
-    link: "https://coffeelavka.com",
+    image: require("../assets/images/portfolio/web-development/Autopilot.png"),
+    title: "Autopilot",
+    description:
+      "Marketing automation platform allowing businesses to automate customer journeys using visual flowcharts with modern animations",
+    link: "https://autopilot.com",
   },
   {
     id: 7,
-    image: require("../assets/images/portfolio/web-development/Crave Kitchen – Digital Food Hall Platform.png"),
-    title: "Crave Kitchen",
-    description: "Digital Food Hall Platform",
-    link: "https://cravekitchen.com",
+    image: require("../assets/images/portfolio/web-development/Gigzio.png"),
+    title: "Gigzio",
+    description:
+      "Powerful job search engine for blue-collar and gig workers with location-based job discovery and mobile-optimized layout",
+    link: "https://gigzio.com",
   },
   {
     id: 8,
-    image: require("../assets/images/portfolio/web-development/Fashion Journey Navigator – Personalized Style Discovery Platform.jpg"),
-    title: "Fashion Journey Navigator",
-    description: "Personalized Style Discovery Platform",
-    link: "https://fashionjourney.com",
+    image: require("../assets/images/portfolio/web-development/FE Group.png"),
+    title: "FE Group",
+    description:
+      "Global industrial solutions provider with multilingual support, animation-driven UI, and structured service flows",
+    link: "https://fegroup.com",
   },
   {
     id: 9,
-    image: require("../assets/images/portfolio/web-development/Interview Pro – Professional Interview Scheduling & Management Platform.jpg"),
-    title: "Interview Pro",
-    description: "Professional Interview Scheduling & Management Platform",
-    link: "https://interviewpro.ai",
+    image: require("../assets/images/portfolio/web-development/The Ladders.png"),
+    title: "The Ladders",
+    description:
+      "Executive-level job opportunities platform balancing editorial content, career advice, and job listings",
+    link: "https://theladders.com",
   },
   {
     id: 10,
-    image: require("../assets/images/portfolio/web-development/Mediverse Connect AI – AI-Powered Healthcare Networking Platform.jpg"),
-    title: "Mediverse Connect AI",
-    description: "AI-Powered Healthcare Networking Platform",
-    link: "https://mediverseconnect.ai",
+    image: require("../assets/images/portfolio/web-development/Huge Inc.png"),
+    title: "Huge Inc",
+    description:
+      "Creative agency portfolio showcasing digital experiences with storytelling, micro-interactions, and parallax visuals",
+    link: "https://hugeinc.com",
   },
   {
     id: 11,
-    image: require("../assets/images/portfolio/web-development/StreamVerse – Smart Rental Management Platform.jpg"),
-    title: "StreamVerse",
-    description: "Smart Rental Management Platform",
-    link: "https://streamverse.io",
+    image: require("../assets/images/portfolio/web-development/CodeHelp.png"),
+    title: "CodeHelp",
+    description:
+      "Learning platform offering coding tutorials, mentorship, and job prep with community focus and structured courses",
+    link: "https://codehelp.in",
   },
   {
     id: 12,
+    image: require("../assets/images/portfolio/web-development/Spray (Bluestar).png"),
+    title: "Spray (Bluestar)",
+    description:
+      "AI-powered spray product showcase with slick transitions, 3D mockups, and dark theme for maximum visual impact",
+    link: "https://spray.com",
+  },
+  {
+    id: 13,
+    image: require("../assets/images/portfolio/web-development/Arcane Mirage.png"),
+    title: "Arcane Mirage",
+    description:
+      "Game studio and creative agency with atmospheric design elements, immersive animations, and character visuals",
+    link: "https://arcanemirage.com",
+  },
+  {
+    id: 14,
+    image: require("../assets/images/portfolio/web-development/MasterShala.png"),
+    title: "MasterShala",
+    description:
+      "WordPress-based EdTech platform offering online courses, video lectures, and certification programs",
+    link: "https://mastershala.com",
+  },
+  {
+    id: 15,
+    image: require("../assets/images/portfolio/web-development/Mantra Dhwani.png"),
+    title: "Mantra Dhwani",
+    description:
+      "Cultural learning platform promoting Indian Vedic chants and spiritual mantras with guided audio and video content",
+    link: "https://mantradhwani.com",
+  },
+  {
+    id: 16,
+    image: require("../assets/images/portfolio/web-development/Educateast.png"),
+    title: "Educateast",
+    description:
+      "Educational services platform providing structured programs and resources for regional educational development",
+    link: "https://educateast.com",
+  },
+  {
+    id: 17,
+    image: require("../assets/images/portfolio/web-development/Guyariv.png"),
+    title: "Guyariv",
+    description:
+      "EdTech platform focused on self-improvement and career-building courses with interactive modules and clean UI",
+    link: "https://guyariv.com",
+  },
+  {
+    id: 18,
+    image: require("../assets/images/portfolio/web-development/Backstage English RC.png"),
+    title: "Backstage English RC",
+    description:
+      "English language training platform for IELTS, TOEFL, and spoken English courses with mobile-optimized learning",
+    link: "https://backstageenglish.com",
+  },
+  {
+    id: 19,
+    image: require("../assets/images/portfolio/web-development/Of Course TN.png"),
+    title: "Of Course TN",
+    description:
+      "Tamil Nadu-based online education platform for government schemes, competitive exams, and digital skilling",
+    link: "https://ofcoursetn.com",
+  },
+  {
+    id: 20,
+    image: require("../assets/images/portfolio/web-development/Messina’s Catering.png"),
+    title: "Messina's Catering",
+    description:
+      "New Orleans-based catering company website with online event booking, gallery sliders, and elegant menu sections",
+    link: "https://messinascatering.com",
+  },
+  {
+    id: 21,
+    image: require("../assets/images/portfolio/web-development/CoffeeLavka Express Track – Real-Time Coffee Order Tracking Platform.jpg"),
+    title: "CoffeeLavka Express Track",
+    description:
+      "Real-Time Coffee Order Tracking Platform with location-based services and mobile-first layout",
+    link: "https://coffeelavka.com",
+  },
+  {
+    id: 22,
+    image: require("../assets/images/portfolio/web-development/Crave Kitchen – Digital Food Hall Platform.png"),
+    title: "Crave Kitchen",
+    description:
+      "Digital Food Hall Platform with online food ordering, menu exploration, and delivery integration",
+    link: "https://cravekitchen.com",
+  },
+  {
+    id: 23,
+    image: require("../assets/images/portfolio/web-development/Fashion Journey Navigator – Personalized Style Discovery Platform.jpg"),
+    title: "Fashion Journey Navigator",
+    description:
+      "Personalized Style Discovery Platform with product galleries and lookbook-style pages",
+    link: "https://fashionjourney.com",
+  },
+  {
+    id: 24,
+    image: require("../assets/images/portfolio/web-development/Interview Pro – Professional Interview Scheduling & Management Platform.jpg"),
+    title: "Interview Pro",
+    description:
+      "Professional Interview Scheduling & Management Platform with structured service flows",
+    link: "https://interviewpro.ai",
+  },
+  {
+    id: 25,
+    image: require("../assets/images/portfolio/web-development/Mediverse Connect AI – AI-Powered Healthcare Networking Platform.jpg"),
+    title: "Mediverse Connect AI",
+    description:
+      "AI-Powered Healthcare Networking Platform with telemedicine and digital health solutions",
+    link: "https://mediverseconnect.ai",
+  },
+  {
+    id: 26,
+    image: require("../assets/images/portfolio/web-development/StreamVerse – Smart Rental Management Platform.jpg"),
+    title: "StreamVerse",
+    description:
+      "Smart Rental Management Platform with virtual tours, smart contracts, and predictive analytics",
+    link: "https://streamverse.io",
+  },
+  {
+    id: 27,
     image: require("../assets/images/portfolio/web-development/UPSC Aids – Personalized Mentorship & UPSC Preparation Dashboard.jpg"),
     title: "UPSC Aids",
-    description: "Personalized Mentorship & UPSC Preparation Dashboard",
+    description:
+      "Personalized Mentorship & UPSC Preparation Dashboard with structured learning programs",
     link: "https://upscaids.com",
+  },
+];
+
+// E-commerce websites portfolio
+export const ecommerceWebsitesPortfolio = [
+  {
+    id: 1,
+    image: require("../assets/images/portfolio/ecommerce-websites/Alfa China.png"),
+    title: "Alfa China",
+    description:
+      "B2B import/export platform focused on Chinese products with real-time product listings and supplier directories",
+    link: "https://alfachina.com",
+  },
+  {
+    id: 2,
+    image: require("../assets/images/portfolio/ecommerce-websites/Bhola Factory.png"),
+    title: "Bhola Factory",
+    description:
+      "Premium Indian ethnic wear brand with full-scale WooCommerce backend and custom category pages",
+    link: "https://bholafactory.com",
+  },
+  {
+    id: 3,
+    image: require("../assets/images/portfolio/ecommerce-websites/Davis Grill.png"),
+    title: "Davis Grill",
+    description:
+      "Restaurant e-commerce with online food ordering, menu exploration, and delivery integration",
+    link: "https://davisgrill.com",
+  },
+  {
+    id: 4,
+    image: require("../assets/images/portfolio/ecommerce-websites/Mucon Factory.png"),
+    title: "Mucon Factory",
+    description:
+      "Industrial product catalog and inquiry platform for components and machinery with technical filtering",
+    link: "https://muconfactory.com",
+  },
+  {
+    id: 5,
+    image: require("../assets/images/portfolio/ecommerce-websites/MyTe Fashion.png"),
+    title: "MyTe Fashion",
+    description:
+      "Youthful, vibrant shopping experience with product galleries and lookbook-style pages",
+    link: "https://mytefashion.com",
+  },
+  {
+    id: 6,
+    image: require("../assets/images/portfolio/ecommerce-websites/Banjaaran.png"),
+    title: "Banjaaran",
+    description:
+      "High-end footwear label blending traditional Indian craftsmanship with modern e-commerce",
+    link: "https://banjaaran.com",
+  },
+  {
+    id: 7,
+    image: require("../assets/images/portfolio/ecommerce-websites/GullyLabs.png"),
+    title: "GullyLabs",
+    description:
+      "Urban streetwear platform with bold designs, seasonal collections, and fast browsing",
+    link: "https://gullylabs.com",
+  },
+  {
+    id: 8,
+    image: require("../assets/images/portfolio/ecommerce-websites/Nickron India.png"),
+    title: "Nickron India",
+    description:
+      "Sleek storefront for appliances and electrical products with product demos and warranty details",
+    link: "https://nickronindia.com",
+  },
+  {
+    id: 9,
+    image: require("../assets/images/portfolio/ecommerce-websites/Official DAPP.png"),
+    title: "Official DAPP",
+    description:
+      "Edgy, design-forward e-commerce space for fashion-forward youth with limited edition releases",
+    link: "https://officialdapp.com",
+  },
+];
+
+// portfolio images (app development)
+export const appDevelopmentPortfolio = [
+  {
+    id: 1,
+    image: require("../assets/images/portfolio/app-development/akash_mega_mart-app.webp"),
+    title: "Akash Mega Mart",
+    description:
+      "User-friendly mobile shopping platform for groceries, fashion items, electronics, and household products with smooth UI and secure checkout",
+    link: "https://play.google.com/store/apps/details?id=com.app.akash_mega_mart",
+    category: "E-commerce",
+  },
+  {
+    id: 2,
+    image: require("../assets/images/portfolio/app-development/Vetlab.png"),
+    title: "Vetlab",
+    description:
+      "Diagnostic and health service app for veterinary clinics and pet owners with digital reports and sample pickup scheduling",
+    link: "https://vetlab.com",
+    category: "Health / Veterinary",
+  },
+  {
+    id: 3,
+    image: require("../assets/images/portfolio/app-development/VetOnline.png"),
+    title: "VetOnline",
+    description:
+      "Telemedicine app allowing pet owners to consult licensed veterinarians through chat or video calls with medical history tracking",
+    link: "https://vetonline.com",
+    category: "Health / Veterinary / Telemedicine",
+  },
+  {
+    id: 4,
+    image: require("../assets/images/portfolio/app-development/Sample Collector.png"),
+    title: "Sample Collector",
+    description:
+      "App for diagnostic labs and field agents to coordinate sample collections with route management and real-time notifications",
+    link: "https://samplecollector.com",
+    category: "Health / Diagnostics",
+  },
+  {
+    id: 5,
+    image: require("../assets/images/portfolio/app-development/feelit_app.webp"),
+    title: "Feelit",
+    description:
+      "Mood-based social media platform where users post thoughts, stories, and images based on emotions for mental wellness",
+    link: "https://play.google.com/store/apps/details?id=com.feelit.feelit_app",
+    category: "Social Networking",
+  },
+  {
+    id: 6,
+    image: require("../assets/images/portfolio/app-development/Eva People App.webp"),
+    title: "Eva People App",
+    description:
+      "HR and wellness platform helping companies monitor employee satisfaction and performance with survey tools and analytics",
+    link: "https://evapeople.com",
+    category: "Corporate / HR",
+  },
+  {
+    id: 7,
+    image: require("../assets/images/portfolio/app-development/Eva Internships.webp"),
+    title: "Eva Internships",
+    description:
+      "App helping students explore, apply, and manage internships worldwide with listings and mentorship tools",
+    link: "https://evainternships.com",
+    category: "Education / Career",
+  },
+  {
+    id: 8,
+    image: require("../assets/images/portfolio/app-development/Eva Training Certificates.webp"),
+    title: "Eva Training Certificates",
+    description:
+      "Digital certificate management app for companies and learners to issue, store, and validate training credentials",
+    link: "https://evacertificates.com",
+    category: "Education / Certification",
+  },
+  {
+    id: 9,
+    image: require("../assets/images/portfolio/app-development/Hayaty.webp"),
+    title: "Hayaty (iOS & Android)",
+    description:
+      "Healthcare and lifestyle management app for patients and caregivers with medication reminders and health records",
+    link: "https://hayaty.com",
+    iosLink: "https://apps.apple.com/app/hayaty",
+    androidLink: "https://play.google.com/store/apps/details?id=com.hayaty.app",
+    category: "Health / Wellness",
+  },
+  {
+    id: 10,
+    image: require("../assets/images/portfolio/app-development/Naseh (iOS - ناصح).webp"),
+    title: "Naseh (iOS & Android - ناصح)",
+    description:
+      "Islamic guidance and personal development app featuring daily motivational content and spiritual reminders",
+    link: "https://naseh.com",
+    iosLink: "https://apps.apple.com/app/naseh",
+    androidLink: "https://play.google.com/store/apps/details?id=com.naseh.app",
+    category: "Religion / Lifestyle",
+  },
+  {
+    id: 11,
+    image: require("../assets/images/portfolio/app-development/Lafi.webp"),
+    title: "Lafi (iOS - لافي)",
+    description:
+      "Premium Arabic-language shopping platform with hand-picked product categories and modern UI",
+    link: "https://lafi.com",
+    category: "E-commerce",
+  },
+  {
+    id: 12,
+    image: require("../assets/images/portfolio/app-development/rentop.webp"),
+    title: "Rentop",
+    description:
+      "Marketplace app allowing users to rent out or lease items with product listings, booking calendar, and payment gateway",
+    link: "https://play.google.com/store/apps/details?id=com.rentop&pcampaignid=web_share",
+    category: "Marketplace / Rentals",
+  },
+  {
+    id: 13,
+    image: require("../assets/images/portfolio/app-development/ICCBrossard.webp"),
+    title: "ICCB Prayer Times",
+    description:
+      "App for Muslim community providing accurate prayer times, Qibla direction, and mosque announcements",
+    link: "https://iccbrossard.com",
+    category: "Religion / Utilities",
+  },
+  {
+    id: 14,
+    image: require("../assets/images/portfolio/app-development/Evans Francis Christian App.webp"),
+    title: "Evans Francis Christian App",
+    description:
+      "Christian app featuring sermon videos, devotional messages, and Bible resources for spiritual growth",
+    link: "https://evansfrancis.com",
+    category: "Religion / Education",
+  },
+  {
+    id: 15,
+    image: require("../assets/images/portfolio/app-development/Zigna AutoSnap.webp"),
+    title: "Zigna AutoSnap",
+    description:
+      "Real estate photography app helping agents capture professional property photos with guided photography and editing",
+    link: "https://play.google.com/store/apps/details?id=com.Zigna.AutoSnap&pcampaignid=web_share",
+    category: "Real Estate / Photography",
+  },
+  {
+    id: 16,
+    image: require("../assets/images/portfolio/app-development/klikomics.webp"),
+    title: "Klikomics",
+    description:
+      "Digital comic reading app with animated panels, original content, and smooth navigation for graphic novel enthusiasts",
+    link: "https://play.google.com/store/apps/details?id=com.klikomics.android&pcampaignid=web_share",
+    category: "Entertainment / Comics",
+  },
+  {
+    id: 17,
+    image: require("../assets/images/portfolio/app-development/Dubai Travel Guide by eTips.webp"),
+    title: "Dubai Travel Guide by eTips",
+    description:
+      "Digital travel companion for Dubai tourists with offline maps, sightseeing highlights, and audio guides",
+    link: "https://etips.com/dubai",
+    category: "Travel / Tourism",
+  },
+  {
+    id: 18,
+    image: require("../assets/images/portfolio/app-development/Planta - Plant & Garden Care.webp"),
+    title: "Planta",
+    description:
+      "Wellness-focused app helping users cultivate healthy lifestyle habits with reminders and progress tracking",
+    link: "https://planta.com",
+    category: "Health / Wellness",
+  },
+  {
+    id: 19,
+    image: require("../assets/images/portfolio/app-development/Serviz.webp"),
+    title: "Serviz",
+    description:
+      "Service aggregator platform connecting users with skilled professionals for home services with transparent pricing",
+    link: "https://serviz.com",
+    category: "On-Demand Services / Home Services",
+  },
+  {
+    id: 20,
+    image: require("../assets/images/portfolio/app-development/Kaamwali Bais.webp"),
+    title: "Kaamwali Bais",
+    description:
+      "App enabling households to find and hire reliable domestic helpers with detailed profiles and background checks",
+    link: "https://kaamwalibais.com",
+    category: "On-Demand Services / Domestic Help",
+  },
+  {
+    id: 21,
+    image: require("../assets/images/portfolio/app-development/Satisfaction Farm - Psychotech.webp"),
+    title: "Satisfaction Farm",
+    description:
+      "Farm-to-home e-commerce platform offering fresh produce directly from farmers with real-time order placement",
+    link: "https://satisfactionfarm.com",
+    category: "E-commerce / Agriculture",
+  },
+  {
+    id: 22,
+    image: require("../assets/images/portfolio/app-development/Fresh and Fresh.webp"),
+    title: "Fresh and Fresh",
+    description:
+      "Grocery delivery app connecting users to local stores for daily essentials with flexible delivery slots",
+    link: "https://freshandfresh.com",
+    category: "E-commerce / Grocery",
+  },
+  {
+    id: 23,
+    image: require("../assets/images/portfolio/app-development/Bharat Meds – TrackNow Medicine Delivery & Tracking App.jpg"),
+    title: "Bharat Meds",
+    description:
+      "TrackNow Medicine Delivery & Tracking App for pharmaceutical services",
+    link: "https://bharatmeds.com",
+    category: "Health / Pharmacy",
+  },
+  {
+    id: 24,
+    image: require("../assets/images/portfolio/app-development/Crimson Classified Hub – Community-Driven Classifieds Platform.jpg"),
+    title: "Crimson Classified Hub",
+    description:
+      "Community-Driven Classifieds Platform for local listings and community engagement",
+    link: "https://crimsonclassifieds.com",
+    category: "Classifieds / Community",
+  },
+  {
+    id: 25,
+    image: require("../assets/images/portfolio/app-development/Dubai Classifieds Pulse – Hyperlocal Classified Listings Platform.jpg"),
+    title: "Dubai Classifieds Pulse",
+    description: "Hyperlocal Classified Listings Platform for Dubai community",
+    link: "https://dubaipulse.ae",
+    category: "Classifieds / Local",
+  },
+  {
+    id: 26,
+    image: require("../assets/images/portfolio/app-development/Ember – AI-Powered Soulmate Matching & Conversation Platform.jpg"),
+    title: "Ember",
+    description:
+      "AI-Powered Soulmate Matching & Conversation Platform for relationship building",
+    link: "https://emberapp.com",
+    category: "Dating / AI",
+  },
+  {
+    id: 27,
+    image: require("../assets/images/portfolio/app-development/UrjaOne Nexus – Mobile Energy Services Marketplace.jpg"),
+    title: "UrjaOne Nexus",
+    description:
+      "Mobile Energy Services Marketplace connecting users with energy solutions",
+    link: "https://urjaone.com",
+    category: "Energy / Marketplace",
+  },
+];
+
+// AI Projects portfolio
+export const aiProjectsPortfolio = [
+  {
+    id: 1,
+    image: require("../assets/images/portfolio/ai/Find My AI Tool.png"),
+    title: "Find My AI Tool",
+    description:
+      "Discovery platform offering curated listings, reviews, and rankings of AI tools across categories like design, automation, and productivity",
+    link: "https://findmyaitool.com",
+    category: "AI Directory / SaaS Review",
+  },
+  {
+    id: 2,
+    image: require("../assets/images/portfolio/ai/AI Art Generator – Vyro AI.webp"),
+    title: "AI Art Generator – Vyro AI",
+    description:
+      "App using machine learning and neural style transfer to convert photos into stunning AI-generated artwork with multiple artistic styles",
+    link: "https://vyro.ai",
+    category: "Art / Photo Editing",
+  },
+  {
+    id: 3,
+    image: require("../assets/images/portfolio/ai/Musicly – AI Music Generator.webp"),
+    title: "Musicly – AI Music Generator",
+    description:
+      "App transforming text prompts and moods into original AI-generated music with background tracks and theme-based soundscapes",
+    link: "https://musicly.ai",
+    category: "AI Music / Audio Creation",
+  },
+];
+
+// Blockchain Projects portfolio
+export const blockchainProjectsPortfolio = [
+  {
+    id: 1,
+    image: require("../assets/images/portfolio/blockchain/Project Butterfly.png"),
+    title: "Project Butterfly",
+    description:
+      "Eco-conscious blockchain initiative supporting carbon offsetting via NFT-backed environmental assets with real-world impact",
+    link: "https://projectbutterfly.com",
+    category: "Sustainability / NFT Utility",
+  },
+  {
+    id: 2,
+    image: require("../assets/images/portfolio/blockchain/Earlynctr.png"),
+    title: "Earlynctr",
+    description:
+      "Curated investment platform for early-stage crypto projects and blockchain startups with vetted listings and community voting",
+    link: "https://earlynctr.com",
+    category: "Crypto Investment / Startup Incubation",
+  },
+  {
+    id: 3,
+    image: require("../assets/images/portfolio/blockchain/Solalgo.png"),
+    title: "Solalgo",
+    description:
+      "Analytics engine built for the Solana ecosystem providing DApp performance metrics, smart contract tracking, and real-time data visualization",
+    link: "https://solalgo.com",
+    category: "Blockchain Analytics / Developer Tools",
+  },
+];
+
+// Chatbot Projects portfolio
+export const chatbotProjectsPortfolio = [
+  {
+    id: 1,
+    image: require("../assets/images/portfolio/chatbot/Chatly.webp"),
+    title: "Chatly – AI Chatbot",
+    description:
+      "Highly engaging AI chatbot that mimics human-like conversations using advanced natural language processing for productivity and companionship",
+    link: "https://chatly.ai",
+    category: "Productivity / Companionship",
+  },
+  {
+    id: 2,
+    image: require("../assets/images/portfolio/chatbot/Dawn AI.webp"),
+    title: "Dawn AI Chatbot",
+    description:
+      "Intelligent virtual assistant integrating text-based conversation with art generation, creative ideation, and inspirational prompts",
+    link: "https://dawnai.com",
+    category: "AI Art & Creative Assistant",
+  },
+  {
+    id: 3,
+    image: require("../assets/images/portfolio/chatbot/GENZ Art.webp"),
+    title: "GENZ Art Chatbot",
+    description:
+      "Vibrant chatbot platform for Gen Z users to create and share AI-generated artworks through interactive chat-based prompts",
+    link: "https://genzart.com",
+    category: "Gen Z / Art & Expression",
+  },
+];
+
+// Game Development portfolio
+export const gameDevelopmentPortfolio = [
+  {
+    id: 1,
+    image: require("../assets/images/portfolio/games/2 3 4 Player Mini Games.webp"),
+    title: "Action Player Games",
+    description:
+      "Diverse collection of fast-paced arcade-style mini-games designed to keep users engaged with adrenaline-packed gameplay",
+    link: "https://actionplayergames.com",
+    category: "Action / Arcade Bundle",
+  },
+  {
+    id: 2,
+    image: require("../assets/images/portfolio/games/Worms Zone .io - Hungry Snake.webp"),
+    title: "Worms Zone.io",
+    description:
+      "Addictive .io-style snake game where players control colorful worms competing to grow the biggest with real-time multiplayer",
+    link: "https://wormszone.io",
+    category: "Multiplayer / Casual Arcade",
+  },
+  {
+    id: 3,
+    image: require("../assets/images/portfolio/games/Sahi - Group Voice Room.webp"),
+    title: "Sahi - Group Voice Room",
+    description:
+      "Interactive game world combining chatting with mini-games and metaverse-style social experience",
+    link: "https://sahi.com",
+    category: "Social / Simulation",
   },
 ];
 
@@ -420,79 +1002,5 @@ export const recentProjects = [
     link: "https://virtuteams.com",
     category: "saas",
     type: "SaaS Project",
-  },
-];
-
-// portfolio images (app development)
-export const appDevelopmentPortfolio = [
-  {
-    id: 1,
-    image: require("../assets/images/portfolio/app-development/akash_mega_mart-app.webp"),
-    title: "Akash Mega Mart Mobile App",
-    description: "E-commerce mobile application for retail shopping",
-    link: "https://play.google.com/store/apps/details?id=com.app.akash_mega_mart",
-  },
-  {
-    id: 2,
-    image: require("../assets/images/portfolio/app-development/feelit_app.webp"),
-    title: "Feel It Mobile App",
-    description: "Emotional wellness and mood tracking application",
-    link: "https://play.google.com/store/apps/details?id=com.feelit.feelit_app",
-  },
-  {
-    id: 3,
-    image: require("../assets/images/portfolio/app-development/klikomics.webp"),
-    title: "Klikomics Mobile App",
-    description: "Digital comics reading platform",
-    link: "https://play.google.com/store/apps/details?id=com.klikomics.android&pcampaignid=web_share",
-  },
-  {
-    id: 4,
-    image: require("../assets/images/portfolio/app-development/autosnap-app.webp"),
-    title: "AutoSnap Mobile App",
-    description: "Vehicle service and maintenance tracking app",
-    link: "https://play.google.com/store/apps/details?id=com.Zigna.AutoSnap&pcampaignid=web_share",
-  },
-  {
-    id: 5,
-    image: require("../assets/images/portfolio/app-development/rentop.webp"),
-    title: "Rentop Bike and Car",
-    description: "Vehicle rental and booking platform",
-    link: "https://play.google.com/store/apps/details?id=com.rentop&pcampaignid=web_share",
-  },
-  {
-    id: 6,
-    image: require("../assets/images/portfolio/app-development/Bharat Meds – TrackNow Medicine Delivery & Tracking App.jpg"),
-    title: "Bharat Meds",
-    description: "TrackNow Medicine Delivery & Tracking App",
-    link: "https://bharatmeds.com",
-  },
-  {
-    id: 7,
-    image: require("../assets/images/portfolio/app-development/Crimson Classified Hub – Community-Driven Classifieds Platform.jpg"),
-    title: "Crimson Classified Hub",
-    description: "Community-Driven Classifieds Platform",
-    link: "https://crimsonclassifieds.com",
-  },
-  {
-    id: 8,
-    image: require("../assets/images/portfolio/app-development/Dubai Classifieds Pulse – Hyperlocal Classified Listings Platform.jpg"),
-    title: "Dubai Classifieds Pulse",
-    description: "Hyperlocal Classified Listings Platform",
-    link: "https://dubaipulse.ae",
-  },
-  {
-    id: 9,
-    image: require("../assets/images/portfolio/app-development/Ember – AI-Powered Soulmate Matching & Conversation Platform.jpg"),
-    title: "Ember",
-    description: "AI-Powered Soulmate Matching & Conversation Platform",
-    link: "https://emberapp.com",
-  },
-  {
-    id: 10,
-    image: require("../assets/images/portfolio/app-development/UrjaOne Nexus – Mobile Energy Services Marketplace.jpg"),
-    title: "UrjaOne Nexus",
-    description: "Mobile Energy Services Marketplace",
-    link: "https://urjaone.com",
   },
 ];

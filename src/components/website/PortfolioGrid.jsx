@@ -1,5 +1,13 @@
 import { useState, useEffect } from "react";
-import { webDevelopmentPortfolio, appDevelopmentPortfolio } from "../../content/constant";
+import { 
+  webDevelopmentPortfolio, 
+  appDevelopmentPortfolio,
+  ecommerceWebsitesPortfolio,
+  aiProjectsPortfolio,
+  blockchainProjectsPortfolio,
+  chatbotProjectsPortfolio,
+  gameDevelopmentPortfolio
+} from "../../content/constant";
 import { CgSpinner } from "react-icons/cg";
 import { Link } from "react-router-dom";
 
@@ -8,6 +16,11 @@ const portfolioCategories = [
   { id: "all", name: "All Projects" },
   { id: "web", name: "Web Development" },
   { id: "app", name: "App Development" },
+  { id: "ecommerce", name: "E-commerce Websites" },
+  { id: "ai", name: "AI Projects" },
+  { id: "blockchain", name: "Blockchain Projects" },
+  { id: "chatbot", name: "Chatbot Projects" },
+  { id: "games", name: "Game Development" },
 ];
 
 // Enhance portfolio items with additional metadata
@@ -21,8 +34,41 @@ const enhancedAppPortfolio = appDevelopmentPortfolio.map(item => ({
   category: "app",
 }));
 
+const enhancedEcommercePortfolio = ecommerceWebsitesPortfolio.map(item => ({
+  ...item,
+  category: "ecommerce",
+}));
+
+const enhancedAiPortfolio = aiProjectsPortfolio.map(item => ({
+  ...item,
+  category: "ai",
+}));
+
+const enhancedBlockchainPortfolio = blockchainProjectsPortfolio.map(item => ({
+  ...item,
+  category: "blockchain",
+}));
+
+const enhancedChatbotPortfolio = chatbotProjectsPortfolio.map(item => ({
+  ...item,
+  category: "chatbot",
+}));
+
+const enhancedGamesPortfolio = gameDevelopmentPortfolio.map(item => ({
+  ...item,
+  category: "games",
+}));
+
 // Combined portfolio
-const allPortfolioItems = [...enhancedWebPortfolio, ...enhancedAppPortfolio];
+const allPortfolioItems = [
+  ...enhancedWebPortfolio, 
+  ...enhancedAppPortfolio, 
+  ...enhancedEcommercePortfolio,
+  ...enhancedAiPortfolio,
+  ...enhancedBlockchainPortfolio,
+  ...enhancedChatbotPortfolio,
+  ...enhancedGamesPortfolio
+];
 
 const PortfolioGrid = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -112,9 +158,9 @@ const PortfolioGrid = () => {
                 <p className="text-white/90 mb-4 text-sm">
                   {item.description || `View the ${item.title} project details`}
                 </p>
-                <Link to={item.link} target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-white text-primary rounded-full font-medium hover:bg-secondary hover:text-black transition-all duration-300">
+                {/* <Link to={item.link} target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-white text-primary rounded-full font-medium hover:bg-secondary hover:text-black transition-all duration-300">
                   View Project
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

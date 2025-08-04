@@ -43,10 +43,10 @@ const Header = () => {
                 <IoMail size={20} /> <span>{companyDetails.email}</span>
               </Link>
               <Link
-                to={`tel:${companyDetails.phone}`}
+                to={`tel:${companyDetails.phone2}`}
                 className="flex items-center gap-2 link"
               >
-                <ImPhone size={18} /> <span>{companyDetails.phone}</span>
+                <ImPhone size={18} /> <span>{companyDetails.phone2}</span>
               </Link>
             </div>
             <div className="py-2 flex items-center gap-4">
@@ -157,7 +157,7 @@ const Header = () => {
             </div>
             <div data-aos="fade-down" className="hidden xl:flex">
               <Link
-                to={`tel:${companyDetails.phone.replace(/[+\s-]/g, "")}`}
+                to={`tel:${companyDetails.phone2.replace(/[+\s-]/g, "")}`}
                 className="btn-fullrounded bg-primary text-white hover:bg-gray-100 hover:text-primary border border-primary"
               >
                 Let's Talk

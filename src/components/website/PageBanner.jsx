@@ -102,17 +102,12 @@ const PageBanner = ({ banner, title, links }) => {
             <div className="text-lg min-w-[12rem] -translate-y-[1rem] md:-translate-y-[2rem] lg:-translate-y-[3rem] flex justify-center">
               <div className="flex flex-col gap-3">
                 <Link
-                  to={`tel:${companyDetails.phone.replace(/[+\s-]/g, "")}`}
-                  className="link flex items-center gap-2"
-                >
-                  <ImPhone size={15} /> {companyDetails.phone}
-                </Link>
-                <Link
                   to={`tel:${companyDetails.phone2.replace(/[+\s-]/g, "")}`}
                   className="link flex items-center gap-2"
                 >
                   <ImPhone size={15} /> {companyDetails.phone2}
                 </Link>
+                
               </div>
             </div>
           </div>

@@ -78,14 +78,6 @@ const Footer = () => {
               <ul className="flex flex-col gap-2 list-disc pl-5">
                 <li className="">
                   <Link
-                    to={`tel:${companyDetails.phone.replace(/[+\s-]/g, "")}`}
-                    className="link"
-                  >
-                    {companyDetails.phone}
-                  </Link>
-                </li>
-                <li className="">
-                  <Link
                     to={`tel:${companyDetails.phone2.replace(/[+\s-]/g, "")}`}
                     className="link"
                   >

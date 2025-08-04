@@ -29,10 +29,10 @@ const ThankYou = () => {
                 <IoMail size={20} /> <span>{companyDetails.email}</span>
               </Link>
               <Link
-                to={`tel:${companyDetails.phone}`}
+                to={`tel:${companyDetails.phone2}`}
                 className="flex items-center gap-2 link"
               >
-                <ImPhone size={18} /> <span>{companyDetails.phone}</span>
+                <ImPhone size={18} /> <span>{companyDetails.phone2}</span>
               </Link>
             </div>
             <div className="py-2 flex items-center gap-4">

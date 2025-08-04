@@ -53,36 +53,42 @@ export const testimonials = [
   },
   {
     id: 6,
+    img: require("../assets/images/testimonial/6.webp"),
     quote: `“ The Gravity AI Tech team was a game changer for our logistics company. Their automation solutions saved us countless hours every week.”`,
     position: "Logistics Director",
     author: "James Anderson",
   },
   {
     id: 7,
+    img: require("../assets/images/testimonial/7.webp"),
+    quote: `“ We needed a custom chatbot for our e-commerce site, and they delivered exactly what we wanted—on time and on budget.”`,
+    position: "E-commerce Manager",
+    author: "Christopher Lee",
+  },
+   {
+    id: 8,
+    img: require("../assets/images/testimonial/8.webp"),
     quote: `“ Their AI-powered analytics gave us insights we never thought possible. Our marketing ROI has never been higher.”`,
     position: "VP of Marketing",
     author: "Ashley Johnson",
   },
   {
-    id: 8,
-    quote: `“ We needed a custom chatbot for our e-commerce site, and they delivered exactly what we wanted—on time and on budget.”`,
-    position: "E-commerce Manager",
-    author: "Christopher Lee",
-  },
-  {
     id: 9,
+    img: require("../assets/images/testimonial/9.webp"),
     quote: `“ The Gravity AI Tech team is responsive, knowledgeable, and truly cares about our success. Highly recommended!”`,
     position: "Operations Manager",
     author: "Amanda Martinez",
   },
   {
     id: 10,
+    img: require("../assets/images/testimonial/11.webp"),
     quote: `“ Their cloud migration service was seamless. We experienced zero downtime and immediate performance improvements.”`,
     position: "IT Director",
     author: "Matthew Clark",
   },
   {
     id: 11,
+    img: require("../assets/images/testimonial/10.webp"),
     quote: `“ We’ve worked with many tech vendors, but none have matched their level of expertise and customer service.”`,
     position: "CEO",
     author: "Olivia Walker",
@@ -95,7 +101,7 @@ export const faqs = [
     id: 1,
     question: "What services does your company offer?",
     answer:
-      "We offer a comprehensive range of technology services including AI-Powered Calling Agency, AI-Powered Chatbot Development, Blockchain Development, Cloud Computing & Migration, Data Analytics & Business Intelligence, IoT Development, VR/AR Solutions, UI/UX Design, Game Development, Mobile App Development, Web Development, Robotic Process Automation, Machine Learning, Natural Language Processing, and Data Science Services.",
+      "We offer a comprehensive range of technology services including AI-Powered Calling Agency, AI Automation for Businesses, Generative AI Solutions, Agentic AI Solutions, Custom AI Model Development, AI Software Development, AI Integration & Cloud Services, AI-Powered Chatbot Development, Blockchain Development, Cloud Computing & Migration, Data Analytics & Business Intelligence, IoT Development, VR/AR Solutions, UI/UX Design, Game Development, Mobile App Development, Web Development, Robotic Process Automation, Machine Learning, Natural Language Processing, and Data Science Services.",
   },
   {
     id: 2,

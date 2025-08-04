@@ -31,7 +31,6 @@ const ContactUs = () => {
               </div>
               <div className="space-y-1 text-black">
                 <h6 className="text4">Phone Numbers</h6>
-                <p>{companyDetails.phone}</p>
                 <p>{companyDetails.phone2}</p>
               </div>
             </div>

@@ -1,5 +1,4 @@
 import banner from "../assets/videos/aboutus.mp4";
-import CountUp from "react-countup";
 import aboutUsImg from "../assets/images/about-us.png";
 import SubHeading from "../components/common/SubHeading";
 import { Link } from "react-router-dom";
@@ -9,6 +8,7 @@ import { lazy } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import ContactForm from "../components/common/ContactForm";
 const PageBanner = lazy(() => import("../components/website/PageBanner"));
+const CEOMessage = lazy(() => import("../components/common/CEOMessage"));
 
 const AboutUs = () => {
   return (
@@ -59,7 +59,8 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[#F0F0F0] text-black">
+      <CEOMessage />
+      <section className="bg-[#F0F0F0] py-14 text-black">
         <div
           data-aos="fade-up"
           className="wrapper py-8 px-3 grid md:grid-cols-[45%_1fr] gap-7 md:gap-16"
@@ -91,6 +92,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+
       <section className="wrapper py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-16">
           <div data-aos="fade-up" className="space-y-4">

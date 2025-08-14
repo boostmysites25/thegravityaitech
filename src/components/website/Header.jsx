@@ -8,6 +8,7 @@ import { ImPhone } from "react-icons/im";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { AiFillInstagram, AiFillYoutube } from "react-icons/ai";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 // Website links
 export const websiteLinks = [
@@ -31,7 +32,7 @@ const Header = () => {
     <>
       <div className="fixed top-0 left-0 w-full z-[100]">
         <div className="hidden border-b md:block relative bg-white text-black">
-          <div className="hidden md:grid grid-cols-[1fr_30%] lg:grid-cols-[1fr_25%] bg-white">
+          <div className="hidden md:grid grid-cols-[1fr_35%] lg:grid-cols-[1fr_30%] bg-white">
             <div className="bg-white py-6"></div>
             <div className="bg-secondary top_header_social_links py-6"></div>
           </div>
@@ -55,6 +56,16 @@ const Header = () => {
              
             </div>
             <div className="py-2 flex items-center gap-4">
+              <Link
+                to={companyDetails.whatsappLink}
+                target="_blank"
+                className="md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-300 md:hover:border-primary text-black md:text-white md:border border-black group"
+              >
+                <IoLogoWhatsapp
+                  size={18}
+                  className="fill-black group-hover:fill-primary md:group-hover:text-black"
+                />
+              </Link>
               <Link
                 to={companyDetails.facebook}
                 target="_blank"

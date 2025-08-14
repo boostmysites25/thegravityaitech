@@ -5,6 +5,7 @@ import { PiPhoneCallFill } from "react-icons/pi";
 import { FaLocationDot } from "react-icons/fa6";
 import { lazy } from "react";
 import ContactForm from "../components/common/ContactForm";
+import QRCodeSection from "../components/common/QRCodeSection";
 
 const MapComponent = lazy(() => import("../components/website/MapComponent"));
 const PageBanner = lazy(() => import("../components/website/PageBanner"));
@@ -19,6 +20,7 @@ const ContactUs = () => {
       />
       <div className="!max-w-6xl wrapper">
         <ContactForm />
+        <QRCodeSection />
         <section
           data-aos="fade-up"
           className="wrapper flex flex-col items-center gap-6 py-[2rem]"

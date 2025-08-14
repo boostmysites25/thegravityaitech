@@ -3,6 +3,7 @@ import { companyDetails, logo } from "../../content/constant";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaXTwitter, FaYoutube } from "react-icons/fa6";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -19,6 +20,16 @@ const Footer = () => {
                   className="w-[13rem] object-contain"
                 />
                 <div className="flex items-center gap-3 pt-3">
+                  <Link
+                    to={companyDetails.whatsappLink}
+                    target="_blank"
+                    className="w-8 h-8 flex items-center justify-center rounded transition-all duration-300 hover:border-primary group"
+                  >
+                    <IoLogoWhatsapp
+                      size={18}
+                      className="group-hover:fill-primary group-hover:text-black"
+                    />
+                  </Link>
                   <Link
                     to={companyDetails.facebook}
                     target="_blank"
@@ -77,11 +88,21 @@ const Footer = () => {
               <h5 className="text4 underline underline-offset-4">Contact</h5>
               <ul className="flex flex-col gap-2 list-disc pl-5">
                 <li className="">
+                  Call Us on :{" "}
                   <Link
                     to={`tel:${companyDetails.phone2.replace(/[+\s-]/g, "")}`}
-                    className="link"
+                    className="link font-semibold"
                   >
                     {companyDetails.phone2}
+                  </Link>
+                </li>
+                <li className="">
+                  Whatsapp Us on :{" "}
+                  <Link
+                    to={companyDetails.whatsappLink}
+                    className="link font-semibold"
+                  >
+                    {companyDetails.whatsappNumber}
                   </Link>
                 </li>
                 <li className="">

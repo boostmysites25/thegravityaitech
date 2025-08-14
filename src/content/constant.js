@@ -6,6 +6,8 @@ export const companyDetails = {
   phone: "+91 9925511716",
   phone2: "+1 903-913-6555",
   email: "info@thegravityaitech.com",
+  whatsappNumber: "+1 939-220-7353",
+  whatsappLink: "https://wa.me/message/6LCW2AGLSNV6O1",
   address: "5900 Balcones Drive, Suite 100, Austin, Texas 78731, USA",
   facebook: "https://www.facebook.com/share/16QFivcYgp/?mibextid=wwXIfr",
   twitter: "https://x.com/TheGravityAI56",
@@ -65,7 +67,7 @@ export const testimonials = [
     position: "E-commerce Manager",
     author: "Christopher Lee",
   },
-   {
+  {
     id: 8,
     img: require("../assets/images/testimonial/8.webp"),
     quote: `“ Their AI-powered analytics gave us insights we never thought possible. Our marketing ROI has never been higher.”`,
